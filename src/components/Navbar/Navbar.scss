@@ -1,3 +1,35 @@
 .top-nav {
-  background-color: transparent !important;
+  background-color: var(--navbar-color);
+  box-shadow: 0 10px 10px -12px rgba(0, 0, 0, 0.6);
+  .nav-section {
+    background-color: transparent !important;
+    .toggle-mobile-nav {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .primary-nav {
+    position: fixed;
+    inset: 0 0 0 30%;
+    z-index: 1000;
+    padding: min(15vh, 10rem) 2em !important;
+    background: var(--navbar-canvas-color);
+    backdrop-filter: blur(2rem) !important;
+    flex-direction: column;
+  }
+  .toggle-mobile-nav {
+    display: block !important;
+    background: url(../../assets/icons/menu.svg);
+    background-repeat: no-repeat;
+    color: var(--accentColor) !important;
+    border: 0;
+    position: absolute;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
 }

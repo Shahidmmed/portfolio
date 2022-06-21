@@ -1,9 +1,9 @@
-const Skills: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <>
-      <div className="uk-section section" id="skills">
+      <div className="uk-section section" id="contact">
         <div className="uk-container">
-          <h3>Skills</h3>
+          <h3>Contact</h3>
 
           <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
             <div>
@@ -31,4 +31,4 @@ const Skills: React.FC = () => {
   );
 };
 
-export default Skills;
+export default Contact;

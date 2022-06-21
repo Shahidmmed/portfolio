@@ -95,6 +95,7 @@ body[p2k-theme="dark"] {
 html {
   scrollbar-width: thin !important;
   scrollbar-color: var(--accentColor) var(--background-color);
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   width: 12px;

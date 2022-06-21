@@ -1,9 +1,9 @@
 const About: React.FC = () => {
   return (
     <>
-      <div className="uk-section section">
+      <div className="uk-section section" id="about">
         <div className="uk-container">
-          <h3>Section Default</h3>
+          <h3>About</h3>
 
           <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
             <div>
