@@ -67,8 +67,8 @@
     --textShade300: var(--lightestText);
   }
 }
-/* toggle light theme when p2k-theme attribute changes*/
-body[p2k-theme="light"] {
+/* toggle light theme when page-theme attribute changes*/
+body[page-theme="light"] {
   --navbar-color: var(--navbar-color-light);
   --navbar-canvas-color: var(--navbar-canvas-color-light);
   --background-color-inverse: var(--background-color-dark);
@@ -79,8 +79,8 @@ body[p2k-theme="light"] {
   --textShade200: var(--darkerText);
   --textShade300: var(--darkestText);
 }
-/* toggle dark theme when p2k-theme attribute changes*/
-body[p2k-theme="dark"] {
+/* toggle dark theme when page-theme attribute changes*/
+body[page-theme="dark"] {
   --navbar-color: var(--navbar-color-dark);
   --navbar-canvas-color: var(--navbar-canvas-color-dark);
   --background-color-inverse: var(--background-color-light);
@@ -117,4 +117,10 @@ body {
 
 .section {
   height: 80vh;
+}
+
+@media screen and (max-width: 35em) {
+  .scroll-lock {
+    overflow-y: hidden;
+  }
 }
