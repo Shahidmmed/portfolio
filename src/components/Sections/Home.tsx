@@ -1,30 +1,16 @@
+import "./Styles.scss";
+
 const Home: React.FC = () => {
   return (
     <>
       <div className="uk-section section" id="home">
-        <div className="uk-container">
-          <h3>Home</h3>
-
-          <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
-          </div>
+        <div className="uk-container uk-container-small">
+          <h3 className="accentText">Hi, my name is</h3>
+          <h2 className="hero uk-margin-remove-top">Shahid.</h2>
+          <p>
+            I'm a software engineer specializing in full-stack web
+            development(front-end heavy)
+          </p>
         </div>
       </div>
     </>

@@ -5,6 +5,23 @@
     background-color: transparent !important;
     a {
       color: var(--textShade300) !important;
+      position: relative;
+    }
+    a:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--accentColor);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    a:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
     .toggle-mobile-nav {
       display: none;
@@ -38,5 +55,8 @@
     aspect-ratio: 1;
     top: 2rem;
     right: 2rem;
+  }
+  .toggle-mobile-nav[aria-expanded="true"] {
+    background: url(../../assets/icons/close.svg);
   }
 }

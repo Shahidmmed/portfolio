@@ -1,0 +1,23 @@
+.section {
+  .accentText {
+    color: var(--accentColor);
+    font-family: gulzar;
+  }
+  .hero {
+    color: var(--textShade300);
+    font-size: var(--headingXXXL);
+    font-weight: 800;
+    font-family: gulzar;
+    text-shadow: var(--hero-text-shadow);
+  }
+  .heading {
+    font-size: var(--headingXL);
+    font-family: gulzar;
+    color: var(--textShade300);
+  }
+  .tagCloud {
+    a {
+      pointer-events: none;
+    }
+  }
+}

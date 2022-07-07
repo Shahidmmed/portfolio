@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import { HashLink as Link } from "react-router-hash-link";
-import menu from "../../assets/icons/menu.svg";
 
 const Navbar: React.FC = () => {
   const [toggled, setToggled] = useState(false);
@@ -76,9 +74,6 @@ const Navbar: React.FC = () => {
               <Link className="uk-navbar-item" to="/#contact">
                 Contact
               </Link>
-            </li>
-            <li className="uk-button">
-              <a href="#">Resume</a>
             </li>
           </ul>
         </div>
