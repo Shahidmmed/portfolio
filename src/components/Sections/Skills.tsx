@@ -3,7 +3,7 @@ const Skills: React.FC = () => {
     <>
       <div className="uk-section section" id="skills">
         <div className="uk-container">
-          <h3>Skills</h3>
+          <h3 className="heading">Skills & Experience</h3>
 
           <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
             <div>

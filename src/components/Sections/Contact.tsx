@@ -3,7 +3,7 @@ const Contact: React.FC = () => {
     <>
       <div className="uk-section section" id="contact">
         <div className="uk-container">
-          <h3>Contact</h3>
+          <h3 className="heading">Contact</h3>
 
           <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
             <div>

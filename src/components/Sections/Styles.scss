@@ -16,8 +16,9 @@
     color: var(--textShade300);
   }
   .tagCloud {
-    a {
-      pointer-events: none;
+    color: var(--accentColor);
+    .tagcloud {
+      width: 100% !important;
     }
   }
 }

@@ -52,26 +52,31 @@ const Navbar: React.FC = () => {
             className="toggle-mobile-nav"
             onClick={showNav}
           >
+            {/*  {!toggled ? (
+          <Menu width={40} height={40} color="var(--accentColor)"></Menu>
+        ) : (
+          <X width={40} height={40} color="var(--accentColor)"></X>
+        )} */}
             <span className="sr-only"></span>
           </button>
           <ul className="uk-navbar-nav primary-nav" data-visible="false">
             <li>
-              <Link className="uk-navbar-item" to="/#about">
+              <Link className="uk-navbar-item menu-btn" to="/#about">
                 About
               </Link>
             </li>
             <li>
-              <Link className="uk-navbar-item" to="/#skills">
+              <Link className="uk-navbar-item menu-btn" to="/#skills">
                 Skills
               </Link>
             </li>
             <li>
-              <Link className="uk-navbar-item" to="/#projects">
+              <Link className="uk-navbar-item menu-btn" to="/#projects">
                 Projects
               </Link>
             </li>
             <li>
-              <Link className="uk-navbar-item" to="/#contact">
+              <Link className="uk-navbar-item menu-btn" to="/#contact">
                 Contact
               </Link>
             </li>

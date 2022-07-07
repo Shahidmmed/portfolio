@@ -104,6 +104,7 @@ html {
   scrollbar-width: thin !important;
   scrollbar-color: var(--accentColor) var(--background-color);
   scroll-behavior: smooth;
+  width: 100%;
 }
 body::-webkit-scrollbar {
   width: 12px;
