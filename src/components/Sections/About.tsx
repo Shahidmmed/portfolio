@@ -48,7 +48,7 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="uk-section section" id="about">
+      <div className="uk-section section uk-padding" id="about">
         <div className="uk-container">
           <h3 className="heading">About Me</h3>
           <div

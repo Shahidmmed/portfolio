@@ -6,6 +6,10 @@
     a {
       color: var(--textShade300) !important;
       position: relative;
+      font-weight: bold;
+    }
+    .menu-btn {
+      text-shadow: var(--menu-text-shadow);
     }
     .menu-btn:after {
       content: "";
@@ -18,6 +22,11 @@
       background-color: var(--accentColor);
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
+    }
+    .menu-btn:hover {
+      text-shadow: var(--hero-text-shadow);
+      transition: transform 0.25s ease-out;
+      transform: scale(1.2);
     }
     .menu-btn:hover:after {
       transform: scaleX(1);

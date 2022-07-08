@@ -15,10 +15,49 @@
     font-family: gulzar;
     color: var(--textShade300);
   }
+  .subheading {
+    font-family: gulzar;
+    font-size: var(--headingL);
+    color: var(--textShade200);
+  }
+  .tag {
+    color: var(--textShade100);
+    font-size: var(--font-md);
+  }
   .tagCloud {
     color: var(--accentColor);
     .tagcloud {
       width: 100% !important;
+    }
+  }
+
+  .skills {
+    .chart {
+      footer {
+        background-color: #373737;
+        height: 2px;
+        div {
+          height: 100%;
+          -webkit-transition: width 1.3s ease-out;
+          -o-transition: width 1.3s ease-out;
+          transition: width 1.3s ease-out;
+        }
+      }
+    }
+    .skillCard {
+      background-color: var(--darker-background);
+      border-radius: 10px;
+      color: var(--textShade200);
+      h5 {
+        font-size: var(--headingMd);
+        font-family: gulzar;
+        color: var(--textShade300);
+      }
+    }
+    .skillCard:hover {
+      transform: scale(1.05);
+      transition: transform 0.25s ease-out;
+      box-shadow: var(--hero-text-shadow);
     }
   }
 }
