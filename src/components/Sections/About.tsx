@@ -39,7 +39,7 @@ const About: React.FC = () => {
     "Bootstrap",
   ];
   const options = {
-    radius: 240,
+    radius: 260,
   };
   /* function setTagColors() {
     var cloud = document.querySelectorAll(".tagcloud");
@@ -57,8 +57,9 @@ const About: React.FC = () => {
           >
             <div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
+                Hi! I'm Shahid and I'm a software engineer with a keen eye for
+                design and a passion for fusing great design with beautiful
+                code.
               </p>
             </div>
             <div className="">

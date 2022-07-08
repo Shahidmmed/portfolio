@@ -5,14 +5,12 @@ const Home: React.FC = () => {
     <>
       <div className="uk-section section" id="home">
         <div className="uk-container uk-container-small">
-          <h3 className="accentText">Hi, my name is</h3>
+          <h3 className="accentText">Hi, my name is </h3>
           <div className="content">
-            <h2 className="hero uk-margin-remove-top">Shahid.</h2>
+            <h2 className="hero uk-margin-remove-top">Abdul Shahid,</h2>
+            <h2 className="heading uk-margin-remove-top">Software Engineer</h2>
           </div>
-          <p>
-            I'm a software engineer specializing in full-stack web
-            development(front-end heavy)
-          </p>
+          <p></p>
         </div>
       </div>
     </>

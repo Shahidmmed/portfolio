@@ -3,12 +3,15 @@
     color: var(--accentColor);
     font-family: gulzar;
   }
-  .hero {
-    color: var(--textShade300);
-    font-size: var(--headingXXXL);
-    font-weight: 800;
-    font-family: gulzar;
-    text-shadow: var(--hero-text-shadow);
+  .content {
+    text-align: center;
+    .hero {
+      color: var(--textShade300);
+      font-size: var(--headingXXXL);
+      font-weight: 800;
+      font-family: gulzar;
+      text-shadow: var(--hero-text-shadow);
+    }
   }
   .heading {
     font-size: var(--headingXL);

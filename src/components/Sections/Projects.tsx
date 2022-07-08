@@ -3,9 +3,9 @@ const Projects: React.FC = () => {
     <>
       <div className="uk-section section uk-padding" id="projects">
         <div className="uk-container">
-          <h3 className="heading">Projects</h3>
+          <h3 className="heading">Some of My Work</h3>
 
-          <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
+          <div className="">
             <div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
