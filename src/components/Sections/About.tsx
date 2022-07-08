@@ -41,10 +41,10 @@ const About: React.FC = () => {
   const options = {
     radius: 230,
   };
-  function setTagColors() {
+  /* function setTagColors() {
     var cloud = document.querySelectorAll(".tagcloud");
     var tool = document.querySelector("span");
-  }
+  } */
 
   return (
     <>
