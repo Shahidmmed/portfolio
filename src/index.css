@@ -129,21 +129,6 @@ body {
   font-family: gulzar;
   font-size: 17px;
 }
-.resume:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--background-color);
-  content: "";
-  opacity: 0;
-  transition: opacity 0.9s ease 0s;
-}
-
-.resume:hover:after {
-  opacity: 0.4;
-}
 .resume p {
   color: var(--textShade200);
   transition: all 0.15s ease 0s;
