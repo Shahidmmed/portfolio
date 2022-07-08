@@ -129,9 +129,167 @@ body {
   font-family: gulzar;
   font-size: 17px;
 }
+.resume:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background-color);
+  content: "";
+  opacity: 0;
+  transition: opacity 0.9s ease 0s;
+}
 
-.section {
-  height: 80vh;
+.resume:hover:after {
+  opacity: 0.4;
+}
+.resume p {
+  color: var(--textShade200);
+  transition: all 0.15s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.resume:hover p {
+  transform: translateY(-10px);
+}
+
+.resume a {
+  transform: translatey(60px);
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  color: var(--accentColor);
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: 10;
+}
+
+.resume a span {
+  display: block;
+  position: relative;
+  line-height: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.resume a > span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 0;
+
+  border: 1px solid var(--accentColor);
+  border-left: none;
+  border-bottom: none;
+
+  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.resume:hover a > span:after {
+  width: calc(50% - 1px);
+  height: calc(100% - 2px);
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.resume a > span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 20px;
+  height: 0;
+
+  border: 1px solid var(--accentColor);
+  border-right: none;
+  border-bottom: none;
+
+  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.resume:hover a > span:before {
+  width: calc(50% - 1px);
+  height: calc(100% - 2px);
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.resume a > span > span:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.resume:hover a > span > span:before {
+  opacity: 1;
+  border-bottom: 1px solid var(--accentColor);
+  width: calc(50%);
+  height: 1px;
+  transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.resume a > span > span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.resume:hover a > span > span:after {
+  opacity: 1;
+  border-bottom: 1px solid var(--accentColor);
+  width: calc(50%);
+  height: 1px;
+  transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.resume a > span > span > span {
+  transition: color 0.15s ease-out 0.3s;
+  color: transparent;
+}
+
+.resume:hover a > span > span > span {
+  color: var(--accentColor);
+}
+
+.resume a > span > span > span:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #1f2e4d;
+  content: attr(data-attr-span);
+  width: 0%;
+  height: 100%;
+  background: var(--accentColor);
+  white-space: nowrap;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  transition: width 0.2s;
+}
+
+.resume a:hover > span > span > span:after {
+  width: 100%;
 }
 
 @media screen and (max-width: 35em) {

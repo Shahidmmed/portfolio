@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Skills: React.FC = () => {
   const frontEnd = {
     backgroundColor: "var(--accentColor)",
@@ -19,15 +21,29 @@ const Skills: React.FC = () => {
 
           <div className="uk-grid-match uk-child-width-1-2@m" data-uk-grid>
             <div>
+              <p></p>
               <p>
                 I build successful responsive websites that are fast, simple to
                 use, and constructed according to best engineering practices.
-                I'm a seasoned full-stack developer that, out of personal
+                I'm an experienced full-stack developer that, out of personal
                 inclination, prefers to focus on front-end development.I've
                 worked remotely for companies, provided startup consulting
                 services, and worked with creative individuals to develop web
                 applications for both commercial and consumer use.
               </p>
+
+              <div className="uk-text-center resume">
+                <p className="uk-margin-remove">
+                  For more information and details, click below
+                </p>
+                <Link className="resumeBtn uk-width-1-4" to="">
+                  <span>
+                    <span>
+                      <span data-attr-span="View Resume">Resume</span>
+                    </span>
+                  </span>
+                </Link>
+              </div>
             </div>
             <div>
               <div>

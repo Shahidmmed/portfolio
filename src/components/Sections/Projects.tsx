@@ -1,7 +1,7 @@
 const Projects: React.FC = () => {
   return (
     <>
-      <div className="uk-section section" id="projects">
+      <div className="uk-section section uk-padding" id="projects">
         <div className="uk-container">
           <h3 className="heading">Projects</h3>
 

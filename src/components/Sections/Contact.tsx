@@ -1,31 +1,18 @@
 const Contact: React.FC = () => {
   return (
     <>
-      <div className="uk-section section" id="contact">
+      <div className="uk-section section uk-padding" id="contact">
         <div className="uk-container">
-          <h3 className="heading">Contact</h3>
-
-          <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
-          </div>
+          <p className="accentText uk-margin-remove uk-text-center">
+            Want to work with me?
+          </p>
+          <h3 className="heading uk-margin-small uk-text-center">
+            Get In Touch
+          </h3>
         </div>
+        <p className="uk-text-center">
+          Designed & built by Abdul-Shahid Mohammed
+        </p>
       </div>
     </>
   );

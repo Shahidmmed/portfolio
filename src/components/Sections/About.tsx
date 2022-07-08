@@ -39,7 +39,7 @@ const About: React.FC = () => {
     "Bootstrap",
   ];
   const options = {
-    radius: 230,
+    radius: 240,
   };
   /* function setTagColors() {
     var cloud = document.querySelectorAll(".tagcloud");
@@ -61,7 +61,7 @@ const About: React.FC = () => {
                 eiusmod tempor.
               </p>
             </div>
-            <div className="uk-margin">
+            <div className="">
               <div className="tagCloud"></div>
             </div>
           </div>
