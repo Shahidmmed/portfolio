@@ -39,9 +39,9 @@
         height: 2px;
         div {
           height: 100%;
-          -webkit-transition: width 1.3s ease-out;
-          -o-transition: width 1.3s ease-out;
-          transition: width 1.3s ease-out;
+          animation: fadeInAnimation ease-out 3s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
         }
       }
     }
@@ -60,5 +60,13 @@
       transition: transform 0.25s ease-out;
       box-shadow: var(--hero-text-shadow);
     }
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

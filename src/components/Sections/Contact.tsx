@@ -10,9 +10,11 @@ const Contact: React.FC = () => {
             Get In Touch
           </h3>
         </div>
-        <p className="uk-text-center">
-          Designed & built by Abdul-Shahid Mohammed
-        </p>
+        <footer>
+          <p className="uk-text-center">
+            Designed & built by Abdul-Shahid Mohammed
+          </p>
+        </footer>
       </div>
     </>
   );
