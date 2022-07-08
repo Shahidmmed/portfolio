@@ -276,6 +276,14 @@ body {
 .resume a:hover > span > span > span:after {
   width: 100%;
 }
+.social-icon {
+  stroke: var(--textShade200);
+}
+.social-icon:hover {
+  stroke: var(--accentColor);
+  transform: scale(1.2);
+  transition: all 0.1s ease-in-out;
+}
 
 @media screen and (max-width: 35em) {
   .scroll-lock {

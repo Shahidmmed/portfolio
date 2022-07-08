@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Styles.scss";
 
 const Skills: React.FC = () => {
   const frontEnd = {
