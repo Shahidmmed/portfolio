@@ -13,6 +13,13 @@
       text-shadow: var(--hero-text-shadow);
     }
   }
+  .profession {
+    font-size: clamp(2.7rem, 5vw, 4rem);
+    font-family: gulzar;
+    color: var(--textShade300);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.95);
+    font-weight: 500;
+  }
   .heading {
     font-size: var(--headingXL);
     font-family: gulzar;

@@ -32,7 +32,7 @@
   --light-menu-text-shadow: 2px 2px rgb(153 153 153 / 70%);
   --light-hero-text-shadow: 5px 5px rgb(153 153 153 / 70%);
   /* fonts */
-  --headingXXXL: clamp(4rem, 7vw, 6rem);
+  --headingXXXL: clamp(4.5rem, 8vw, 7rem);
   --headingXXL: clamp(2.5rem, 5vw, 4rem);
   --headingXL: clamp(1.6rem, 3vw, 2rem);
   --headingL: clamp(1.4rem, 2.5vw, 1.6rem);
