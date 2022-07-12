@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Styles.scss";
+import "./Skills.scss";
 
 const Skills: React.FC = () => {
   const frontEnd = {
@@ -22,16 +22,21 @@ const Skills: React.FC = () => {
 
           <div className="uk-grid-match uk-child-width-1-2@m" data-uk-grid>
             <div>
-              <p></p>
-              <p>
-                I'm an experienced full-stack developer that, out of personal
-                inclination, prefers to focus on front-end development. I build
-                successful responsive websites that are fast, simple to use, and
-                constructed according to best engineering practices. I've worked
-                remotely for companies, provided startup consulting services,
-                and worked with creative individuals to develop web applications
-                for both commercial and consumer use.
-              </p>
+              <div>
+                <p>
+                  I'm an experienced full-stack developer that, out of personal
+                  inclination, prefers to focus on front-end development.
+                </p>
+                <p>
+                  User experience is a component of software that, in my
+                  opinion, is essential for a successful product. I build
+                  effective responsive websites that are fast, simple to use,
+                  and constructed according to best engineering practices. I've
+                  worked remotely for companies, provided startup consulting
+                  services, and worked with creative individuals to develop web
+                  applications for both commercial and consumer use.
+                </p>
+              </div>
               <div className="uk-text-center resume">
                 <p className="uk-margin-remove">
                   For more information and details, click below

@@ -1,4 +1,4 @@
-import "./Styles.scss";
+import "./Home.scss";
 
 const Home: React.FC = () => {
   return (

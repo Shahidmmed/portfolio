@@ -129,6 +129,36 @@ body {
   font-family: gulzar;
   font-size: 17px;
 }
+.accentText {
+  color: var(--accentColor);
+  font-family: gulzar;
+}
+.hero {
+  color: var(--textShade300);
+  font-size: var(--headingXXXL);
+  font-weight: 800;
+  font-family: gulzar;
+  text-shadow: var(--hero-text-shadow);
+}
+.profession {
+  font-size: clamp(2.7rem, 5vw, 4rem);
+  font-family: gulzar;
+  color: var(--textShade300);
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.95);
+  font-weight: 600;
+}
+.heading {
+  font-size: var(--headingXL);
+  font-family: gulzar;
+  color: var(--textShade300);
+  font-weight: 600;
+}
+.subheading {
+  font-family: gulzar;
+  font-size: var(--headingL);
+  color: var(--textShade200);
+}
+
 .resume p {
   color: var(--textShade200);
   transition: all 0.15s ease 0s;

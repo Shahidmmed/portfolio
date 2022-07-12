@@ -1,3 +1,5 @@
+import "./Projects.scss";
+
 const Projects: React.FC = () => {
   return (
     <>

@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
-import "./Styles.scss";
+import "./Contact.scss";
 import { GitHub, Twitter, AtSign, Linkedin } from "react-feather";
-import { myData } from "../../data/info";
+import { myData } from "../../../data/info";
 
 const Contact: React.FC = () => {
   return (
