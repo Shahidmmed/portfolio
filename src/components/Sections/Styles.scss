@@ -18,12 +18,13 @@
     font-family: gulzar;
     color: var(--textShade300);
     text-shadow: 3px 3px rgba(0, 0, 0, 0.95);
-    font-weight: 500;
+    font-weight: 600;
   }
   .heading {
     font-size: var(--headingXL);
     font-family: gulzar;
     color: var(--textShade300);
+    font-weight: 600;
   }
   .subheading {
     font-family: gulzar;
@@ -39,6 +40,16 @@
     .tagcloud {
       width: 100% !important;
       bottom: 10%;
+    }
+  }
+
+  .about-me {
+    .leader {
+      font-size: var(--headingMd);
+      font-weight: 300;
+    }
+    p {
+      max-height: 200px;
     }
   }
 

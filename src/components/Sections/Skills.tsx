@@ -24,15 +24,14 @@ const Skills: React.FC = () => {
             <div>
               <p></p>
               <p>
-                I build successful responsive websites that are fast, simple to
-                use, and constructed according to best engineering practices.
                 I'm an experienced full-stack developer that, out of personal
-                inclination, prefers to focus on front-end development.I've
-                worked remotely for companies, provided startup consulting
-                services, and worked with creative individuals to develop web
-                applications for both commercial and consumer use.
+                inclination, prefers to focus on front-end development. I build
+                successful responsive websites that are fast, simple to use, and
+                constructed according to best engineering practices. I've worked
+                remotely for companies, provided startup consulting services,
+                and worked with creative individuals to develop web applications
+                for both commercial and consumer use.
               </p>
-
               <div className="uk-text-center resume">
                 <p className="uk-margin-remove">
                   For more information and details, click below
