@@ -1,7 +1,27 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Skills.scss";
 
 const Skills: React.FC = () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const bar = entry.target.querySelector(".progress");
+
+      if (entry.isIntersecting) {
+        bar.classList.add("animate");
+        return; // if we added the class, exit the function
+      }
+
+      // We're not intersecting, so remove the class!
+      bar.classList.remove("animate");
+    });
+  });
+  useEffect(() => {
+    document.querySelectorAll(".chart").forEach((footer) => {
+      observer.observe(footer);
+    });
+  }, []);
+
   const frontEnd = {
     backgroundColor: "var(--accentColor)",
     width: "90%",
@@ -55,19 +75,19 @@ const Skills: React.FC = () => {
                 <div className="chart uk-margin">
                   <span>Front end</span>
                   <footer>
-                    <div style={frontEnd}></div>
+                    <div style={frontEnd} className="progress"></div>
                   </footer>
                 </div>
                 <div className="chart uk-margin">
                   <span>Back end</span>
                   <footer>
-                    <div style={backEnd}></div>
+                    <div style={backEnd} className="progress"></div>
                   </footer>
                 </div>
                 <div className="chart uk-margin">
                   <span>React</span>
                   <footer>
-                    <div style={react}></div>
+                    <div style={react} className="progress"></div>
                   </footer>
                 </div>
               </div>
