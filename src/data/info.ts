@@ -9,6 +9,15 @@ type IConfig = {
   };
 };
 
+export type IProjects = {
+  title: string;
+  summary: string;
+  tools: string[];
+  img: string;
+  github?: string;
+  extlink?: string;
+};
+
 export const myData: IConfig = {
   personalInfo: {
     linkedIn: "https://www.linkedin.com/in/abdul-shahid-mohammed-6703951b2",
@@ -19,3 +28,14 @@ export const myData: IConfig = {
     image: "",
   },
 };
+
+export const featuredProjects = [
+  {
+    title: "Finance Logger",
+    summary:
+      "Web Application for logging, keeping track of and calculating expenses over selected periods.",
+    tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#", "Typescript"],
+    img: "financeLogger.png",
+    github: "https://github.com/Shahidmmed/MyFinanceLogger",
+  },
+];

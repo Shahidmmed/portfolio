@@ -308,6 +308,7 @@ body {
 }
 .social-icon {
   stroke: var(--textShade200);
+  cursor: pointer;
 }
 .social-icon:hover {
   stroke: var(--accentColor);

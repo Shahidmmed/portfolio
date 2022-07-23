@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import FeaturedProjects from "../../FeaturedProjects/component";
+import { featuredProjects } from "../../../data/info";
 import "./Projects.scss";
 
 const Projects: React.FC = () => {
@@ -26,8 +27,14 @@ const Projects: React.FC = () => {
         <div className="uk-container">
           <h3 className="heading">Some of My Work</h3>
 
-          <div className="">
-            <FeaturedProjects />
+          <div className="uk-padding">
+            <ul className="projects-list">
+              {featuredProjects.map((project, index) => (
+                <li key={index}>
+                  <FeaturedProjects data={project}></FeaturedProjects>
+                </li>
+              ))}
+            </ul>
           </div>
           <div
             className="uk-child-width-1-3@m uk-padding uk-grid-small uk-grid-match"
