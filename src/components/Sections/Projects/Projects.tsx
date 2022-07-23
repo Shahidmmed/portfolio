@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import FeaturedProjects from "../../FeaturedProjects/component";
 import "./Projects.scss";
 
 const Projects: React.FC = () => {
@@ -13,6 +14,7 @@ const Projects: React.FC = () => {
       bar.classList.remove("animate");
     });
   });
+
   useEffect(() => {
     document.querySelectorAll(".chart").forEach((footer) => {
       observer.observe(footer);
@@ -25,24 +27,7 @@ const Projects: React.FC = () => {
           <h3 className="heading">Some of My Work</h3>
 
           <div className="">
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
-            <div className="">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </div>
+            <FeaturedProjects />
           </div>
           <div
             className="uk-child-width-1-3@m uk-padding uk-grid-small uk-grid-match"

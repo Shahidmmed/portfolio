@@ -59,7 +59,7 @@ const Skills: React.FC = () => {
               </div>
               <div className="uk-text-center resume">
                 <p className="uk-margin-remove">
-                  For more information and details, click below
+                  To view my resume, click below
                 </p>
                 <Link className="resumeBtn uk-width-1-4" to="">
                   <span>
