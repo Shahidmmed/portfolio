@@ -54,7 +54,10 @@ const About: React.FC = () => {
             className="uk-grid-match uk-child-width-1-2@m  uk-flex"
             data-uk-grid
           >
-            <div className="about-me">
+            <div
+              className="about-me"
+              data-uk-scrollspy="cls: uk-animation-slide-left; delay: 600;"
+            >
               <div>
                 <p className="leader">
                   Hi! I'm Shahid. I'm a software engineer with a keen eye for
@@ -85,7 +88,10 @@ const About: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="">
+            <div
+              className=""
+              data-uk-scrollspy="cls: uk-animation-slide-right; delay: 600;"
+            >
               <div className="tagCloud"></div>
             </div>
           </div>

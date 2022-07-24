@@ -9,6 +9,11 @@
   border-radius: 10px;
   color: var(--textShade200) !important;
 }
+.folder:hover {
+  transform: scale(1.05);
+  transition: transform 0.25s ease-out;
+  box-shadow: var(--hero-text-shadow);
+}
 
 .slide-in-right {
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

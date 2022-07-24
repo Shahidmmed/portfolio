@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
 
           <div
             className="uk-child-width-1-3@m uk-padding uk-grid-small uk-grid-match"
-            data-uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true"
+            data-uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500;"
             data-uk-grid
           >
             <div>

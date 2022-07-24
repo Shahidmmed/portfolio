@@ -9,10 +9,9 @@ const Skills: React.FC = () => {
 
       if (entry.isIntersecting) {
         bar.classList.add("animate");
-        return; // if we added the class, exit the function
+        return;
       }
 
-      // We're not intersecting, so remove the class!
       bar.classList.remove("animate");
     });
   });
