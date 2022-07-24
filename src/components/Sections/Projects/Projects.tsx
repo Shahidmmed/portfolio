@@ -25,19 +25,39 @@ const Projects: React.FC = () => {
     <>
       <div className="uk-section section uk-padding" id="projects">
         <div className="uk-container">
-          <h3 className="heading">Some of My Work</h3>
+          <h3
+            className="heading"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;"
+          >
+            Some of My Work
+          </h3>
 
           <div className="uk-padding">
             <ul className="projects-list">
               {featuredProjects.map((project, index) => (
-                <li key={index}>
-                  <FeaturedProjects data={project}></FeaturedProjects>
+                <li key={index} className="uk-margin">
+                  <FeaturedProjects
+                    data={project}
+                    className={
+                      index % 2 !== 0 ? "slide-in-right" : "slide-in-left"
+                    }
+                    invert={index % 2 !== 0 ? false : true}
+                  ></FeaturedProjects>
                 </li>
               ))}
             </ul>
           </div>
+
+          <h3
+            className="heading"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;"
+          >
+            Other projects
+          </h3>
+
           <div
             className="uk-child-width-1-3@m uk-padding uk-grid-small uk-grid-match"
+            data-uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true"
             data-uk-grid
           >
             <div>

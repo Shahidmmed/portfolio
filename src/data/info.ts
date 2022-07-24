@@ -38,4 +38,12 @@ export const featuredProjects = [
     img: "financeLogger.png",
     github: "https://github.com/Shahidmmed/MyFinanceLogger",
   },
+  {
+    title: "Finance Logger",
+    summary:
+      "Web Application for logging, keeping track of and calculating expenses over selected periods.",
+    tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#", "Typescript"],
+    img: "financeLogger.png",
+    github: "https://github.com/Shahidmmed/MyFinanceLogger",
+  },
 ];

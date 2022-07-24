@@ -44,7 +44,12 @@ const About: React.FC = () => {
     <>
       <div className="uk-section section uk-padding" id="about">
         <div className="uk-container">
-          <h3 className="heading">About Me</h3>
+          <h3
+            className="heading"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;"
+          >
+            About Me
+          </h3>
           <div
             className="uk-grid-match uk-child-width-1-2@m  uk-flex"
             data-uk-grid

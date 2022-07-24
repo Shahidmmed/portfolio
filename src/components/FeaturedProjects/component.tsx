@@ -5,13 +5,18 @@ import { IProjects } from "../../data/info";
 
 interface Props {
   data?: IProjects;
+  invert?: boolean;
+  className: string;
 }
 
 const FeaturedProjects: React.FC<Props> = (prop) => {
-  console.log(`../../assets/projectImages/${prop.data.img}`);
+  let txtPos = prop.invert ? "textRight" : "textLeft";
+  let txtAlign = prop.invert ? "textAlign" : "";
+  let imgPos = prop.invert ? "" : "imgPosition";
+
   return (
-    <div className="projectItem">
-      <div className="textContainer uk-padding">
+    <div className={`${prop.className} projectItem`}>
+      <div className={`${txtPos} ${txtAlign} textContainer uk-padding`}>
         <h3 className="title">{prop.data.title}</h3>
         <div className="summary uk-card uk-card-small uk-card-body">
           <p>{prop.data.summary}</p>
@@ -44,7 +49,7 @@ const FeaturedProjects: React.FC<Props> = (prop) => {
           ) : null}
         </div>
       </div>
-      <div className="imgContainer">
+      <div className={`${imgPos} imgContainer`}>
         <img
           src={require(`../../assets/projectImages/${prop.data.img}`)}
           alt=""

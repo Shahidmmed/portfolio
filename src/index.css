@@ -13,6 +13,7 @@
   --hero-background-color: rgb(22, 44, 80);
   --secondaryColor: #12201c;
   --accentColor-dark: hsl(166, 100%, 70%);
+  --screenColor-dark: rgb(22 44 80 / 65%);
   --darkerDark: rgb(10, 32, 68);
   --lightestText: rgb(220, 230, 230);
   --lighterText: rgb(200, 220, 220);
@@ -24,6 +25,7 @@
   --navbar-canvas-color-light: hsla(0, 0%, 93%, 0.95);
   --background-color-light: hsla(0, 0%, 93%, 1);
   --accentColor-light: hsl(166, 41%, 41%);
+  --screenColor-light: hsl(0deg 0% 93% / 50%);
   --darkerLight: rgb(211, 211, 211);
   --darkestText: rgb(0, 0, 0);
   --darkerText: rgb(34, 34, 34);
@@ -53,6 +55,7 @@
     --background-color-inverse: var(--background-color-dark);
     --background-color: var(--background-color-light);
     --accentColor: var(--accentColor-light);
+    --screenColor: var(--screenColor-light);
     --darker-background: var(--darkerLight);
     --textShade100: var(--darkText);
     --textShade200: var(--darkerText);
@@ -68,6 +71,7 @@
     --background-color: var(--background-color-dark);
     --background-color-inverse: var(--background-color-light);
     --darker-background: var(--darkerDark);
+    --screenColor: var(--screenColor-dark);
     --accentColor: var(--accentColor-dark);
     --textShade100: var(--lightText);
     --textShade200: var(--lighterText);
@@ -83,6 +87,7 @@ body[page-theme="light"] {
   --background-color-inverse: var(--background-color-dark);
   --background-color: var(--background-color-light);
   --accentColor: var(--accentColor-light);
+  --screenColor: var(--screenColor-light);
   --darker-background: var(--darkerLight);
   --textShade100: var(--darkText);
   --textShade200: var(--darkerText);
@@ -97,6 +102,7 @@ body[page-theme="dark"] {
   --background-color-inverse: var(--background-color-light);
   --background-color: var(--background-color-dark);
   --darker-background: var(--darkerDark);
+  --screenColor: var(--screenColor-dark);
   --accentColor: var(--accentColor-dark);
   --textShade100: var(--lightText);
   --textShade200: var(--lighterText);
