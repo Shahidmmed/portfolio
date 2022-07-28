@@ -4,23 +4,6 @@ import { featuredProjects } from "../../../data/info";
 import "./Projects.scss";
 
 const Projects: React.FC = () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const bar = entry.target.querySelector(".progress");
-
-      if (entry.isIntersecting) {
-        bar.classList.add("animate");
-        return;
-      }
-      bar.classList.remove("animate");
-    });
-  });
-
-  useEffect(() => {
-    document.querySelectorAll(".chart").forEach((footer) => {
-      observer.observe(footer);
-    });
-  }, []);
   return (
     <>
       <div className="uk-section section uk-padding" id="projects">

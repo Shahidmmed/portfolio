@@ -1,7 +1,7 @@
 import { ExternalLink, GitHub } from "react-feather";
 import "./_styles.scss";
-import financeLogger from "../../assets/projectImages/financeLogger.png";
 import { IProjects } from "../../data/info";
+import { useEffect } from "react";
 
 interface Props {
   data?: IProjects;

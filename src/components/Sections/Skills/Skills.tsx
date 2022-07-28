@@ -11,10 +11,9 @@ const Skills: React.FC = () => {
         bar.classList.add("animate");
         return;
       }
-
-      bar.classList.remove("animate");
     });
   });
+
   useEffect(() => {
     document.querySelectorAll(".chart").forEach((footer) => {
       observer.observe(footer);

@@ -24,6 +24,18 @@
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
+    .menu-btn.active {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--accentColor);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
     .menu-btn:hover {
       text-shadow: var(--hero-text-shadow);
       transition: transform 0.25s ease-out;
