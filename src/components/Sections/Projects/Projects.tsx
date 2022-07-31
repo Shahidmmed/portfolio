@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
           <div className="uk-padding">
             <ul className="projects-list">
               {featuredProjects.map((project, index) => (
-                <li key={index} className="uk-margin">
+                <li key={index} className="uk-margin list-item">
                   <FeaturedProjects
                     data={project}
                     className={
