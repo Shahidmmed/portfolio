@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
     document.querySelectorAll(".chart").forEach((footer) => {
       observer.observe(footer);
     });
-  }, []);
+  });
 
   const frontEnd = {
     backgroundColor: "var(--accentColor)",
