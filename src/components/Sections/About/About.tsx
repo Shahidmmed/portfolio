@@ -11,7 +11,7 @@ const About: React.FC = () => {
     } else if (!cloudContainer.classList.contains("tagcloud")) {
       TagCloud(".tagCloud", tools, options);
     }
-  }, []);
+  });
 
   const tools = [
     "Typescript",
