@@ -119,3 +119,16 @@
     height: fit-content;
   }
 }
+
+@media screen and (max-width: 415px) {
+  .textContainer,
+  .imgContainer {
+    left: -55px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .textContainer,
+  .imgContainer {
+    left: -70px;
+  }
+}
