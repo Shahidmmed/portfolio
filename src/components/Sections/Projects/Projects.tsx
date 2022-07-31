@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import FeaturedProjects from "../../FeaturedProjects/component";
 import { featuredProjects } from "../../../data/info";
 import "./Projects.scss";
