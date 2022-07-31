@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
       data-uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light"
       className="top-nav"
     >
-      <nav className="uk-navbar-container uk-navbar-transparent uk-padding-small uk-navbar nav-section">
+      <nav className="uk-navbar-container uk-navbar-transparent uk-navbar nav-section">
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav left-nav">
             <Link className="uk-navbar-item uk-logo" to="/#home">

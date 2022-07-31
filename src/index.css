@@ -13,24 +13,28 @@
   --hero-background-color: rgb(22, 44, 80);
   --secondaryColor: #12201c;
   --accentColor-dark: hsl(166, 100%, 70%);
+  --screenColor-dark: rgb(22 44 80 / 65%);
   --darkerDark: rgb(10, 32, 68);
   --lightestText: rgb(220, 230, 230);
   --lighterText: rgb(200, 220, 220);
   --lightText: rgb(168, 178, 209);
+  --dark-menu-text-shadow: 2px 2px rgba(0, 0, 0, 0.95);
   --dark-hero-text-shadow: 5px 5px rgba(0, 0, 0, 0.95);
   /* light mode */
   --navbar-color-light: hsla(0, 0%, 93%, 0.9);
   --navbar-canvas-color-light: hsla(0, 0%, 93%, 0.95);
   --background-color-light: hsla(0, 0%, 93%, 1);
   --accentColor-light: hsl(166, 41%, 41%);
+  --screenColor-light: hsl(0deg 0% 93% / 50%);
   --darkerLight: rgb(211, 211, 211);
   --darkestText: rgb(0, 0, 0);
   --darkerText: rgb(34, 34, 34);
   --darkText: rgb(51, 51, 51);
   --button-hover-color: hsla(166, 53%, 56%, 0.2);
+  --light-menu-text-shadow: 2px 2px rgb(153 153 153 / 70%);
   --light-hero-text-shadow: 5px 5px rgb(153 153 153 / 70%);
   /* fonts */
-  --headingXXXL: clamp(4rem, 7vw, 6rem);
+  --headingXXXL: clamp(4.5rem, 8vw, 7rem);
   --headingXXL: clamp(2.5rem, 5vw, 4rem);
   --headingXL: clamp(1.6rem, 3vw, 2rem);
   --headingL: clamp(1.4rem, 2.5vw, 1.6rem);
@@ -51,6 +55,7 @@
     --background-color-inverse: var(--background-color-dark);
     --background-color: var(--background-color-light);
     --accentColor: var(--accentColor-light);
+    --screenColor: var(--screenColor-light);
     --darker-background: var(--darkerLight);
     --textShade100: var(--darkText);
     --textShade200: var(--darkerText);
@@ -66,10 +71,12 @@
     --background-color: var(--background-color-dark);
     --background-color-inverse: var(--background-color-light);
     --darker-background: var(--darkerDark);
+    --screenColor: var(--screenColor-dark);
     --accentColor: var(--accentColor-dark);
     --textShade100: var(--lightText);
     --textShade200: var(--lighterText);
     --textShade300: var(--lightestText);
+    --menu-text-shadow: var(--dark-menu-text-shadow);
     --hero-text-shadow: var(--dark-hero-text-shadow);
   }
 }
@@ -80,10 +87,12 @@ body[page-theme="light"] {
   --background-color-inverse: var(--background-color-dark);
   --background-color: var(--background-color-light);
   --accentColor: var(--accentColor-light);
+  --screenColor: var(--screenColor-light);
   --darker-background: var(--darkerLight);
   --textShade100: var(--darkText);
   --textShade200: var(--darkerText);
   --textShade300: var(--darkestText);
+  --menu-text-shadow: var(--light-menu-text-shadow);
   --hero-text-shadow: var(--light-hero-text-shadow);
 }
 /* toggle dark theme when page-theme attribute changes*/
@@ -93,6 +102,7 @@ body[page-theme="dark"] {
   --background-color-inverse: var(--background-color-light);
   --background-color: var(--background-color-dark);
   --darker-background: var(--darkerDark);
+  --screenColor: var(--screenColor-dark);
   --accentColor: var(--accentColor-dark);
   --textShade100: var(--lightText);
   --textShade200: var(--lighterText);
@@ -123,11 +133,193 @@ body {
   overflow-x: hidden;
   color: var(--textShade200);
   font-family: gulzar;
-  font-size: 20px;
+  font-size: 17px;
+}
+.accentText {
+  color: var(--accentColor);
+  font-family: gulzar;
+}
+.hero {
+  color: var(--textShade300);
+  font-size: var(--headingXXXL);
+  font-weight: 800;
+  font-family: gulzar;
+  text-shadow: var(--hero-text-shadow);
+}
+.profession {
+  font-size: clamp(2.7rem, 5vw, 4rem);
+  font-family: gulzar;
+  color: var(--textShade300);
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.95);
+  font-weight: 600;
+}
+.heading {
+  font-size: var(--headingXL);
+  font-family: gulzar;
+  color: var(--textShade300);
+  font-weight: 600;
+}
+.subheading {
+  font-family: gulzar;
+  font-size: var(--headingL);
+  color: var(--textShade200);
 }
 
-.section {
-  height: 80vh;
+.resume p {
+  color: var(--textShade200);
+  transition: all 0.15s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.resume:hover p {
+  transform: translateY(-10px);
+}
+
+.resume a {
+  transform: translatey(60px);
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  color: var(--accentColor);
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: 10;
+}
+
+.resume a span {
+  display: block;
+  position: relative;
+  line-height: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.resume a > span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 0;
+
+  border: 1px solid var(--accentColor);
+  border-left: none;
+  border-bottom: none;
+
+  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.resume:hover a > span:after {
+  width: calc(50% - 1px);
+  height: calc(100% - 2px);
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.resume a > span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 20px;
+  height: 0;
+
+  border: 1px solid var(--accentColor);
+  border-right: none;
+  border-bottom: none;
+
+  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.resume:hover a > span:before {
+  width: calc(50% - 1px);
+  height: calc(100% - 2px);
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.resume a > span > span:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.resume:hover a > span > span:before {
+  opacity: 1;
+  border-bottom: 1px solid var(--accentColor);
+  width: calc(50%);
+  height: 1px;
+  transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.resume a > span > span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.resume:hover a > span > span:after {
+  opacity: 1;
+  border-bottom: 1px solid var(--accentColor);
+  width: calc(50%);
+  height: 1px;
+  transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.resume a > span > span > span {
+  transition: color 0.15s ease-out 0.3s;
+  color: transparent;
+}
+
+.resume:hover a > span > span > span {
+  color: var(--accentColor);
+}
+
+.resume a > span > span > span:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #1f2e4d;
+  content: attr(data-attr-span);
+  width: 0%;
+  height: 100%;
+  background: var(--accentColor);
+  white-space: nowrap;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  transition: width 0.2s;
+}
+
+.resume a:hover > span > span > span:after {
+  width: 100%;
+}
+.social-icon {
+  stroke: var(--textShade200);
+  cursor: pointer;
+}
+.social-icon:hover {
+  stroke: var(--accentColor);
+  transform: scale(1.2);
+  transition: all 0.1s ease-in-out;
 }
 
 @media screen and (max-width: 35em) {

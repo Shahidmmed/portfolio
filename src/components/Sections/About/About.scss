@@ -1,0 +1,16 @@
+.about-me {
+  .leader {
+    font-size: var(--headingMd);
+    font-weight: 300;
+  }
+  p {
+    max-height: 200px;
+  }
+}
+.tagCloud {
+  color: var(--accentColor);
+  .tagcloud {
+    width: 100% !important;
+    bottom: 10%;
+  }
+}

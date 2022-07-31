@@ -1,0 +1,45 @@
+.skills {
+  .chart {
+    footer {
+      background-color: #373737;
+      height: 2px;
+      .progress {
+        height: 100%;
+      }
+      .animate {
+        animation: progressOut 1s ease-out 0s 1 forwards;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  .skillCard {
+    background-color: var(--darker-background);
+    border-radius: 10px;
+    color: var(--textShade200);
+    h5 {
+      font-size: var(--headingMd);
+      font-family: gulzar;
+      color: var(--textShade300);
+    }
+  }
+  .skillCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.25s ease-out;
+    box-shadow: var(--hero-text-shadow);
+  }
+  .tag {
+    color: var(--textShade100);
+    font-size: var(--font-md);
+  }
+}
+@keyframes progressOut {
+  0% {
+    width: 0%;
+  }
+  10% {
+    width: 0%;
+  }
+  100% {
+    max-width: 100%;
+  }
+}
