@@ -7,10 +7,18 @@
     both;
 }
 .profession {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s
-    both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.5s both;
 }
+
+@media screen and (max-width: 415px) {
+  .hero {
+    font-size: clamp(3.5rem, 7vw, 6rem) !important;
+  }
+  .profession {
+    font-size: clamp(2.2rem, 4vw, 3rem) !important;
+  }
+}
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-1000px);
