@@ -46,7 +46,7 @@ const About: React.FC = () => {
         <div className="uk-container">
           <h3
             className="heading"
-            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500;"
           >
             About Me
           </h3>
@@ -56,7 +56,7 @@ const About: React.FC = () => {
           >
             <div
               className="about-me"
-              data-uk-scrollspy="cls: uk-animation-slide-left; delay: 600;"
+              data-uk-scrollspy="cls: uk-animation-slide-left; delay: 700;"
             >
               <div>
                 <p className="leader">
@@ -90,7 +90,7 @@ const About: React.FC = () => {
             </div>
             <div
               className=""
-              data-uk-scrollspy="cls: uk-animation-slide-right; delay: 600;"
+              data-uk-scrollspy="cls: uk-animation-slide-right; delay: 700;"
             >
               <div className="tagCloud"></div>
             </div>

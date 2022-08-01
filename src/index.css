@@ -140,6 +140,7 @@ body {
 }
 .main-container {
   overflow-x: hidden;
+  width: 100%;
 }
 .accentText {
   color: var(--accentColor);
