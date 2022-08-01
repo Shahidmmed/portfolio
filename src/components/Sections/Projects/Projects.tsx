@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
           </div>
 
           <h3
-            className="heading"
+            className="heading uk-text-center"
             data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;"
           >
             Other projects
