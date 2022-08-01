@@ -5,9 +5,11 @@
 .hero {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
     both;
+  white-space: nowrap;
 }
 .profession {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.5s both;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 415px) {
