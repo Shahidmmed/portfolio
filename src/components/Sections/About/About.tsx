@@ -17,6 +17,7 @@ const About: React.FC = () => {
     "Typescript",
     "Javscript",
     "SASS",
+    "CSS",
     "C#",
     "HTML",
     "ReactJS",
@@ -44,12 +45,14 @@ const About: React.FC = () => {
     <>
       <div className="uk-section section uk-padding" id="about">
         <div className="uk-container">
-          <h3
-            className="heading"
-            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500;"
-          >
-            About Me
-          </h3>
+          <div>
+            <h3
+              className="heading-left"
+              data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500;"
+            >
+              About Me<span className="heading-line"></span>
+            </h3>
+          </div>
           <div
             className="uk-grid-match uk-child-width-1-2@m  uk-flex"
             data-uk-grid
