@@ -172,6 +172,7 @@ body {
   color: var(--textShade300);
   font-weight: 600;
   display: flex;
+  white-space: nowrap !important;
 }
 .subheading {
   font-family: gulzar;
