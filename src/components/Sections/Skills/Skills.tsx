@@ -37,10 +37,10 @@ const Skills: React.FC = () => {
       <div className="uk-section section uk-padding" id="skills">
         <div className="uk-container skills">
           <h3
-            className="heading"
+            className="heading-left"
             data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;"
           >
-            Skills & Experience
+            Skills & Experience <span className="heading-line"></span>
           </h3>
 
           <div className="uk-grid-match uk-child-width-1-2@m" data-uk-grid>

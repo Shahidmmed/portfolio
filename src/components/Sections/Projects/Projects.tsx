@@ -8,10 +8,10 @@ const Projects: React.FC = () => {
       <div className="uk-section section uk-padding" id="projects">
         <div className="uk-container">
           <h3
-            className="heading"
+            className="heading-left"
             data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;"
           >
-            Some of My Work
+            Some of My Work <span className="heading-line"></span>
           </h3>
 
           <div className="uk-padding">
