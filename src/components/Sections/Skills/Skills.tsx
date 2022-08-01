@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
           </h3>
 
           <div className="uk-grid-match uk-child-width-1-2@m" data-uk-grid>
-            <div>
+            <div data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500;">
               <div>
                 <p>
                   I'm an experienced full-stack developer that, out of personal
@@ -74,7 +74,7 @@ const Skills: React.FC = () => {
               </div>
             </div>
             <div>
-              <div>
+              <div data-uk-scrollspy="cls: uk-animation-fade; delay: 500;">
                 <div className="chart uk-margin">
                   <span>Front end</span>
                   <footer>
@@ -94,7 +94,10 @@ const Skills: React.FC = () => {
                   </footer>
                 </div>
               </div>
-              <div className="skillCard uk-card uk-card-default uk-card-body">
+              <div
+                className="skillCard uk-card uk-card-default uk-card-body"
+                data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
+              >
                 <h5>Full Stack Developer</h5>
                 <p className="uk-margin-remove-bottom tag">ACS Ghana</p>
                 <p className="uk-margin-remove-top tag">2020-2022</p>
