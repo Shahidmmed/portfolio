@@ -9,7 +9,10 @@ const Contact: React.FC = () => {
         className="uk-section section uk-padding contactSection"
         id="contact"
       >
-        <div className="uk-container">
+        <div
+          className="uk-container"
+          data-uk-scrollspy="cls: uk-animation-fade; delay: 600;"
+        >
           <p className="accentText uk-margin-remove uk-text-center">
             Want to work with me?
           </p>
