@@ -20,6 +20,7 @@
   --lightText: rgb(168, 178, 209);
   --dark-menu-text-shadow: 2px 2px rgba(0, 0, 0, 0.95);
   --dark-hero-text-shadow: 5px 5px rgba(0, 0, 0, 0.95);
+  --dark-logo: url(../src/assets/icons/logo.png);
   /* light mode */
   --navbar-color-light: hsla(0, 0%, 93%, 0.9);
   --navbar-canvas-color-light: hsla(0, 0%, 93%, 0.95);
@@ -31,8 +32,9 @@
   --darkerText: rgb(34, 34, 34);
   --darkText: rgb(51, 51, 51);
   --button-hover-color: hsla(166, 53%, 56%, 0.2);
-  --light-menu-text-shadow: 2px 2px rgb(153 153 153 / 70%);
-  --light-hero-text-shadow: 5px 5px rgb(153 153 153 / 70%);
+  --light-menu-text-shadow: 2px 2px rgb(153 153 153 / 25%);
+  --light-hero-text-shadow: 5px 5px rgb(153 153 153 / 10%);
+  --light-logo: url(../src/assets/icons/logoLight.png);
   /* fonts */
   --headingXXXL: clamp(4.5rem, 8vw, 7rem);
   --headingXXL: clamp(2.5rem, 5vw, 4rem);
@@ -61,6 +63,7 @@
     --textShade200: var(--darkerText);
     --textShade300: var(--darkestText);
     --hero-text-shadow: var(--light-hero-text-shadow);
+    --logo: var(var(--light-logo));
   }
 }
 /* if system uses dark theme */
@@ -78,6 +81,7 @@
     --textShade300: var(--lightestText);
     --menu-text-shadow: var(--dark-menu-text-shadow);
     --hero-text-shadow: var(--dark-hero-text-shadow);
+    --logo: var(var(--dark-logo));
   }
 }
 /* toggle light theme when page-theme attribute changes*/
@@ -94,6 +98,7 @@ body[page-theme="light"] {
   --textShade300: var(--darkestText);
   --menu-text-shadow: var(--light-menu-text-shadow);
   --hero-text-shadow: var(--light-hero-text-shadow);
+  --logo: var(var(--light-logo));
 }
 /* toggle dark theme when page-theme attribute changes*/
 body[page-theme="dark"] {
@@ -108,6 +113,7 @@ body[page-theme="dark"] {
   --textShade200: var(--lighterText);
   --textShade300: var(--lightestText);
   --hero-text-shadow: var(--dark-hero-text-shadow);
+  --logo: var(var(--dark-logo));
 }
 
 html {

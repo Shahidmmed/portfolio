@@ -1,23 +1,40 @@
 import { useEffect, useState } from "react";
 import "./Navbar.scss";
 import { HashLink as Link } from "react-router-hash-link";
-import logo from "../../assets/icons/logo.png";
+import logoDark from "../../assets/icons/logo.png";
+import logoLight from "../../assets/icons/logoLight.png";
 
 const Navbar: React.FC = () => {
-  const [toggled, setToggled] = useState(false);
-  useEffect(() => {}, []);
+  const [navToggled, setNavToggled] = useState(false);
+  const [logo, setLogo] = useState(logoDark);
+
+  useEffect(() => {
+    window.dispatchEvent(new Event("storage"));
+    window.addEventListener(
+      "storage",
+      () => {
+        console.log("storage event occured here");
+        if (localStorage.getItem("page.theme") === "light") {
+          setLogo(logoLight);
+        } else if (localStorage.getItem("page.theme") === "dark") {
+          setLogo(logoDark);
+        }
+      },
+      false
+    );
+  }, []);
 
   const showNav = () => {
     const primaryNav = document.querySelector(".primary-nav");
     const navToggle = document.querySelector(".toggle-mobile-nav");
     const visibility = primaryNav.getAttribute("data-visible");
 
-    if (!toggled) {
+    if (!navToggled) {
       document.body.classList.add("scroll-lock");
     } else {
       document.body.classList.remove("scroll-lock");
     }
-    setToggled(!toggled);
+    setNavToggled(!navToggled);
 
     if (visibility === "false") {
       primaryNav.setAttribute("data-visible", "true");
@@ -28,7 +45,7 @@ const Navbar: React.FC = () => {
     }
 
     primaryNav.addEventListener("focusout", () => {
-      console.log("clic");
+      console.log("click");
     });
   };
 
@@ -40,7 +57,7 @@ const Navbar: React.FC = () => {
       <nav className="uk-navbar-container uk-navbar-transparent uk-navbar nav-section">
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav left-nav">
-            <Link className="uk-navbar-item logo" to="/#home">
+            <Link className="uk-navbar-item logo" to="/#">
               <img src={logo} alt="logo" />
             </Link>
           </ul>
