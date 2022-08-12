@@ -9,6 +9,11 @@
       position: relative;
       font-weight: bold;
     }
+    .logo {
+      img {
+        height: 90px;
+      }
+    }
     .menu-btn {
       text-shadow: var(--menu-text-shadow);
     }
