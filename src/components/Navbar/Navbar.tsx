@@ -1,11 +1,27 @@
 import { useEffect, useState } from "react";
 import "./Navbar.scss";
 import { HashLink as Link } from "react-router-hash-link";
-import logo from "../../assets/icons/logo.png";
+import logoDark from "../../assets/icons/logo.png";
+import logoLight from "../../assets/icons/logoLight.png";
 
 const Navbar: React.FC = () => {
   const [toggled, setToggled] = useState(false);
-  useEffect(() => {}, []);
+  const [logo, setLogo] = useState(logoDark);
+  useEffect(() => {
+    setLogo(getCurrentTheme());
+  }, [logo]);
+
+  function getCurrentTheme() {
+    if (localStorage.getItem("page.theme")) {
+      var theme = localStorage.getItem("page.theme");
+      console.log(theme);
+    }
+    if (theme === "light") {
+      return logoLight;
+    } else if (theme === "dark") {
+      return logoDark;
+    }
+  }
 
   const showNav = () => {
     const primaryNav = document.querySelector(".primary-nav");
@@ -28,7 +44,7 @@ const Navbar: React.FC = () => {
     }
 
     primaryNav.addEventListener("focusout", () => {
-      console.log("clic");
+      console.log("click");
     });
   };
 
