@@ -12,7 +12,7 @@ const Home: React.FC = () => {
             </h2>
           </div>
           <div className="img-content">
-            <div className="logo"></div>
+            <div className="picture"></div>
           </div>
         </div>
       </div>

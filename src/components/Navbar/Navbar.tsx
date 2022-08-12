@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Navbar.scss";
 import { HashLink as Link } from "react-router-hash-link";
+import logo from "../../assets/icons/logo.png";
 
 const Navbar: React.FC = () => {
   const [toggled, setToggled] = useState(false);
@@ -39,8 +40,8 @@ const Navbar: React.FC = () => {
       <nav className="uk-navbar-container uk-navbar-transparent uk-navbar nav-section">
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav left-nav">
-            <Link className="uk-navbar-item uk-logo" to="/#home">
-              Logo
+            <Link className="uk-navbar-item logo" to="/#home">
+              <img src={logo} alt="logo" />
             </Link>
           </ul>
         </div>
