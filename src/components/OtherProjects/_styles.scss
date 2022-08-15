@@ -1,0 +1,29 @@
+.folder {
+  margin-right: 20px;
+  height: 345px;
+  .links {
+    text-align: right;
+  }
+  .title {
+    color: var(--textShade300);
+    font-size: var(headingL);
+    font-weight: 600;
+  }
+  .title:hover {
+    color: var(--accentColor);
+  }
+  .summary {
+    border-radius: var(--border-radius);
+    color: var(--textShade200);
+    background-color: var(--darker-background);
+    border-radius: 0.375rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .folder {
+    margin-right: 0 !important;
+  }
+}

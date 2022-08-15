@@ -57,9 +57,11 @@ const Navbar: React.FC = () => {
       <nav className="uk-navbar-container uk-navbar-transparent uk-navbar nav-section">
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav left-nav">
-            <Link className="uk-navbar-item logo" to="/#">
-              <img src={logo} alt="logo" />
-            </Link>
+            <li>
+              <Link className="uk-navbar-item logo" to="/#">
+                <img src={logo} alt="logo" />
+              </Link>
+            </li>
           </ul>
         </div>
 

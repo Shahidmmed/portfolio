@@ -1,6 +1,7 @@
 import FeaturedProjects from "../../FeaturedProjects/component";
-import { featuredProjects } from "../../../data/info";
+import { featuredProjects, otherProjects } from "../../../data/info";
 import "./Projects.scss";
+import OtherProjects from "../../OtherProjects/component";
 
 const Projects: React.FC = () => {
   return (
@@ -42,30 +43,11 @@ const Projects: React.FC = () => {
             data-uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500;"
             data-uk-grid
           >
-            <div>
-              <div className="folder uk-card uk-card-default uk-card-body uk-margin-right">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="folder uk-card uk-card-default uk-card-body uk-margin-right">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="folder uk-card uk-card-default uk-card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </p>
-              </div>
-            </div>
+            {otherProjects.map((project, index) => (
+              <li key={index} className="">
+                <OtherProjects data={project}></OtherProjects>
+              </li>
+            ))}
           </div>
         </div>
       </div>

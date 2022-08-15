@@ -4,8 +4,7 @@
   position: relative;
 }
 .hero {
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
-    both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
   white-space: nowrap !important;
 }
 .profession {
@@ -34,8 +33,8 @@
   margin: auto;
   background: url("//blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png")
     no-repeat 50%/70% rgba(0, 0, 0, 0.1);
-  color: #69ca62;
-  box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+  color: var(--accentColor);
+  box-shadow: inset 0 0 0 1px var(--accentColor);
 }
 .picture::before,
 .picture::after {
