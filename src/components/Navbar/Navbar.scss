@@ -1,6 +1,7 @@
 .top-nav {
   background-color: var(--navbar-color);
   box-shadow: 0 10px 10px -12px rgba(0, 0, 0, 0.6);
+  font-family: josefinSans !important;
   .nav-section {
     background-color: transparent !important;
     padding: 6px;
@@ -11,12 +12,14 @@
     }
     .logo {
       padding: 0;
+      background: url(../../assets/icons/shahid.svg);
       img {
         height: 90px;
       }
     }
     .menu-btn {
       text-shadow: var(--menu-text-shadow);
+      font-family: josefinSans !important;
     }
     .menu-btn:after {
       content: "";

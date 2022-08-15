@@ -3,3 +3,28 @@
   src: url(./Gulzar-Regular.ttf);
   font-weight: normal;
 }
+@font-face {
+  font-family: josefinSans;
+  src: url(./JosefinSans-Bold.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: josefinSans-light;
+  src: url(./JosefinSans-Light.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: josefinSans-Regular;
+  src: url(./JosefinSans-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: josefinSans-Thin;
+  src: url(./JosefinSans-Thin.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: josefinSans-Italic;
+  src: url(./JosefinSans-Italic.ttf);
+  font-weight: normal;
+}

@@ -13,7 +13,7 @@ export type IProjects = {
   title: string;
   summary: string;
   tools: string[];
-  img: string;
+  img?: string;
   github?: string;
   extlink?: string;
 };
@@ -45,5 +45,27 @@ export const featuredProjects = [
     tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#", "Typescript"],
     img: "financeLogger.png",
     github: "https://github.com/Shahidmmed/MyFinanceLogger",
+  },
+];
+
+export const otherProjects = [
+  {
+    title: "Weather App",
+    summary:
+      "Weather Application that displays detailed information on the weather of input location.",
+    tools: ["HTML", "CSS", "Svelte", "REST", "Javascript"],
+    github: "https://github.com/Shahidmmed/WeatherApp",
+  },
+  {
+    title: "RandomUser",
+    summary: "Web Application for generating and displaying random users",
+    tools: ["HTML", "CSS", "React", "Node", "REST", "Javascript"],
+    github: "https://github.com/Shahidmmed/randomuser",
+  },
+  {
+    title: "RandomUser",
+    summary: "Web Application for generating and displaying random users",
+    tools: ["HTML", "CSS", "React", "Node", "REST", "Javascript"],
+    github: "https://github.com/Shahidmmed/randomuser",
   },
 ];
