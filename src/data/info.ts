@@ -39,12 +39,20 @@ export const featuredProjects = [
     github: "https://github.com/Shahidmmed/MyFinanceLogger",
   },
   {
-    title: "Finance Logger",
-    summary:
-      "Web Application for logging, keeping track of and calculating expenses over selected periods.",
-    tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#", "Typescript"],
-    img: "financeLogger.png",
-    github: "https://github.com/Shahidmmed/MyFinanceLogger",
+    title: "Netflix clone",
+    summary: "Netflix clone with trailer preview web application.",
+    tools: [
+      "HTML",
+      "CSS",
+      "React",
+      "Javascript",
+      "REST",
+      "Tailwind",
+      "Firebase",
+    ],
+    img: "netflixUi.png",
+    github: "https://github.com/Shahidmmed/netflix_ui",
+    extlink: "https://netflix-clone-63557.web.app/",
   },
 ];
 
