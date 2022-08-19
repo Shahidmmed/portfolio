@@ -52,7 +52,7 @@ export const featuredProjects = [
     ],
     img: "netflixUi.png",
     github: "https://github.com/Shahidmmed/netflix_ui",
-    extLink: "https://netflix-clone-63557.web.app/",
+    extlink: "https://netflix-clone-63557.web.app/",
   },
 ];
 
