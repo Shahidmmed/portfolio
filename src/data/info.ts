@@ -41,7 +41,15 @@ export const featuredProjects = [
   {
     title: "Netflix clone",
     summary: "Netflix clone with trailer preview web application.",
-    tools: ["HTML", "CSS", "React", "Javascript", "REST", "Tailwind"],
+    tools: [
+      "HTML",
+      "CSS",
+      "React",
+      "Javascript",
+      "REST",
+      "Tailwind",
+      "Firebase",
+    ],
     img: "netflixUi.png",
     github: "https://github.com/Shahidmmed/netflix_ui",
     extLink: "https://netflix-clone-63557.web.app/",
