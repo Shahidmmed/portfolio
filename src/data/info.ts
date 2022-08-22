@@ -54,6 +54,24 @@ export const featuredProjects = [
     github: "https://github.com/Shahidmmed/netflix_ui",
     extlink: "https://netflix-clone-63557.web.app/",
   },
+  ,
+  {
+    title: "Amazon clone",
+    summary:
+      "Amazon clone with user authentication, cart, checkout and payment processing functionalities.",
+    tools: [
+      "HTML",
+      "CSS",
+      "React",
+      "Javascript",
+      "REST",
+      "Tailwind",
+      "Firebase",
+    ],
+    img: "amazonUi.png",
+    github: "https://github.com/Shahidmmed/amazon_ui",
+    extlink: "https://clone-89d16.web.app/",
+  },
 ];
 
 export const otherProjects = [
