@@ -29,6 +29,7 @@ const About: React.FC = () => {
     "ASP.NET",
     "npm",
     "UIkit",
+    "Tailwind",
     "Bootstrap",
     "Wordpress",
     "Git",
