@@ -55,7 +55,6 @@ export const featuredProjects = [
     github: "https://github.com/Shahidmmed/netflix_ui",
     extlink: "https://netflix-clone-63557.web.app/",
   },
-  ,
   {
     title: "Amazon clone",
     summary:
