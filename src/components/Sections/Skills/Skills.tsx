@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { myData } from "../../../data/info";
 import "./Skills.scss";
 
 const Skills: React.FC = () => {
@@ -64,13 +65,18 @@ const Skills: React.FC = () => {
                 <p className="uk-margin-remove">
                   To view my resume, click below
                 </p>
-                <Link className="resumeBtn uk-width-1-4" to="">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resumeBtn uk-width-1-4"
+                  href={myData.personalInfo.resume}
+                >
                   <span>
                     <span>
                       <span data-attr-span="View Resume">Resume</span>
                     </span>
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
             <div>
