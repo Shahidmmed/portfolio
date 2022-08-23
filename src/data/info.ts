@@ -69,7 +69,7 @@ export const featuredProjects = [
       "Firebase",
     ],
     img: "amazonUi.png",
-    github: "https://github.com/Shahidmmed/amazon_ui",
+    github: "https://github.com/Shahidmmed/amazon_clone",
     extlink: "https://clone-89d16.web.app/",
   },
 ];
