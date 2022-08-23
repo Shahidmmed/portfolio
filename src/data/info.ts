@@ -24,7 +24,8 @@ export const myData: IConfig = {
     mail: "shahidmmed@gmail.com",
     twitter: "https://twitter.com/shahidmed",
     github: "https://github.com/shahidmmed",
-    resume: "",
+    resume:
+      "https://res.cloudinary.com/daj4pxkwx/image/upload/v1661210344/personal/Abdul-Shahid_Mohammed_resume_xelznf.pdf",
     image:
       "https://res.cloudinary.com/daj4pxkwx/image/upload/v1661209680/personal/profileImage_xzma0j.jpg",
   },
