@@ -77,17 +77,18 @@ export const featuredProjects = [
 
 export const otherProjects = [
   {
+    title: "Chat App",
+    summary: "A simple chat application utilizing firebase database and react",
+    tools: ["HTML", "CSS", "React", "Tailwind", "Firebase", "Javascript"],
+    github: "https://github.com/Shahidmmed/chatapp",
+    extlink: "https://chat-app-9fbb5.web.app/chat",
+  },
+  {
     title: "Weather App",
     summary:
       "Weather Application that displays detailed information on the weather of input location.",
     tools: ["HTML", "CSS", "Svelte", "REST", "Javascript"],
     github: "https://github.com/Shahidmmed/WeatherApp",
-  },
-  {
-    title: "RandomUser",
-    summary: "Web Application for generating and displaying random users",
-    tools: ["HTML", "CSS", "React", "Node", "REST", "Javascript"],
-    github: "https://github.com/Shahidmmed/randomuser",
   },
   {
     title: "RandomUser",
