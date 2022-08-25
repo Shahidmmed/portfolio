@@ -25,7 +25,7 @@ const OtherProjects: React.FC<Props> = (prop) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <ExternalLink className="social-icon" />
+              <ExternalLink className="social-icon " />
             </a>
           ) : null}
         </div>
