@@ -25,7 +25,7 @@ export const myData: IConfig = {
     twitter: "https://twitter.com/shahidmed",
     github: "https://github.com/shahidmmed",
     resume:
-      "https://res.cloudinary.com/daj4pxkwx/image/upload/v1661210344/personal/Abdul-Shahid_Mohammed_resume_xelznf.pdf",
+      "https://res.cloudinary.com/daj4pxkwx/image/upload/v1662213699/personal/Abdul-Shahid_Mohammed_resume_ruawzb.pdf",
     image:
       "https://res.cloudinary.com/daj4pxkwx/image/upload/v1661209680/personal/profileImage_xzma0j.jpg",
   },

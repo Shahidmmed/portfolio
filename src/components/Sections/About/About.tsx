@@ -32,15 +32,13 @@ const About: React.FC = () => {
     "Tailwind",
     "Bootstrap",
     "Wordpress",
+    "Firebase",
+    "Context API",
     "Git",
   ];
   const options = {
     radius: 280,
   };
-  /* function setTagColors() {
-    var cloud = document.querySelectorAll(".tagcloud");
-    var tool = document.querySelector("span");
-  } */
 
   return (
     <>

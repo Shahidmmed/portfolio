@@ -18,7 +18,11 @@ const Projects: React.FC = () => {
           <div className="uk-padding">
             <ul className="projects-list">
               {featuredProjects.map((project, index) => (
-                <li key={index} className="uk-margin list-item">
+                <li
+                  key={index}
+                  className="uk-margin list-item"
+                  data-uk-scrollspy="target: .projectItem;"
+                >
                   <FeaturedProjects
                     data={project}
                     className={

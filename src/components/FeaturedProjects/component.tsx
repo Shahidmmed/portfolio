@@ -13,8 +13,6 @@ const FeaturedProjects: React.FC<Props> = (prop) => {
   let txtAlign = prop.invert ? "textAlign" : "";
   let imgPos = prop.invert ? "" : "imgPosition";
 
-  console.log("lunk", prop.data?.extlink);
-
   return (
     <div className={`${prop.className} projectItem`}>
       <div className={`${txtPos} ${txtAlign} textContainer uk-padding`}>
