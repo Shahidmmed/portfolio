@@ -41,6 +41,15 @@ export const featuredProjects = [
     github: "https://github.com/Shahidmmed/MyFinanceLogger",
   },
   {
+    title: "Admin Dashboard",
+    summary:
+      "React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and Editor",
+    tools: ["HTML", "CSS", "React", "Javascript", "Tailwind", "Firebase"],
+    img: "adminDashboard.png",
+    github: "https://github.com/Shahidmmed/dashboard_app",
+    extlink: "https://dashboard-app-7672b.web.app/",
+  },
+  {
     title: "Netflix clone",
     summary: "Netflix clone with trailer preview web application.",
     tools: [
