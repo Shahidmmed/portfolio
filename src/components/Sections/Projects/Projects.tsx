@@ -16,17 +16,18 @@ const Projects: React.FC = () => {
           </h3>
 
           <div className="uk-padding">
-            <ul className="projects-list">
+            <ul
+              className="projects-list"
+              data-uk-scrollspy="target: .projectItem;"
+            >
               {featuredProjects.map((project, index) => (
-                <li
-                  key={index}
-                  className="uk-margin list-item"
-                  data-uk-scrollspy="target: .projectItem;"
-                >
+                <li key={index} className="uk-margin list-item">
                   <FeaturedProjects
                     data={project}
                     className={
-                      index % 2 !== 0 ? "slide-in-right" : "slide-in-left"
+                      index % 2 !== 0
+                        ? "uk-animation-slide-right"
+                        : "uk-animation-slide-left"
                     }
                     invert={index % 2 !== 0 ? false : true}
                   ></FeaturedProjects>
