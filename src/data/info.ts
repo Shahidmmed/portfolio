@@ -86,6 +86,13 @@ export const featuredProjects = [
 
 export const otherProjects = [
   {
+    title: "React Reusable components",
+    summary:
+      "Custom tailwind react reusable components such as, pagination, modal, tabs, otp, etc.",
+    tools: ["React", "Redux", "CSS", "Tailwind", "Typescript"],
+    github: "https://github.com/Shahidmmed/react-custom-components",
+  },
+  {
     title: "Chat App",
     summary: "A simple chat application utilizing firebase database and react",
     tools: ["HTML", "CSS", "React", "Tailwind", "Firebase", "Javascript"],

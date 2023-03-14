@@ -72,11 +72,6 @@ const Navbar: React.FC = () => {
             className="toggle-mobile-nav"
             onClick={showNav}
           >
-            {/*  {!toggled ? (
-          <Menu width={40} height={40} color="var(--accentColor)"></Menu>
-        ) : (
-          <X width={40} height={40} color="var(--accentColor)"></X>
-        )} */}
             <span className="sr-only"></span>
           </button>
           <ul className="uk-navbar-nav primary-nav" data-visible="false">
