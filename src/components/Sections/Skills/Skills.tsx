@@ -105,11 +105,12 @@ const Skills: React.FC = () => {
               >
                 <h5>Full Stack Developer</h5>
                 <p className="uk-margin-remove-bottom tag">ACS Ghana</p>
-                <p className="uk-margin-remove-top tag">2020-2022</p>
+                <p className="uk-margin-remove-top tag">2020-2023</p>
                 <p>
-                  Tech company that provides software development services to
-                  corporate, ranging from outsourcing to customizations to
-                  integrations and packaged software development.
+                  A reliable supplier of technical and project management talent
+                  on an outsourcing basis to enable corporate customers to
+                  achieve their projects that involve software development and
+                  integration components.
                 </p>
               </div>
             </div>
