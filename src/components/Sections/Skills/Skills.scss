@@ -12,6 +12,11 @@
       }
     }
   }
+  .skillHeader {
+    font-size: var(--headingL);
+    font-family: gulzar;
+    color: var(--textShade300);
+  }
   .skillCard {
     background-color: var(--darker-background);
     border-radius: 10px;
@@ -27,11 +32,49 @@
     transition: transform 0.25s ease-out;
     box-shadow: var(--hero-text-shadow);
   }
+  .certCard {
+    background-color: var(--darker-background);
+    border-radius: 10px;
+    padding: 20px !important;
+    //width: 50% !important;
+    color: var(--textShade200);
+    h5 {
+      font-size: var(--headingMd);
+      font-family: gulzar;
+      color: var(--textShade300);
+    }
+    .certImg {
+      height: 90px;
+    }
+
+    .verify {
+      color: var(--accentColor);
+    }
+  }
+  .certCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.25s ease-out;
+    box-shadow: var(--hero-text-shadow);
+  }
   .tag {
     color: var(--textShade100);
     font-size: var(--font-md);
   }
 }
+
+@media screen and (min-width: 769px) {
+  .certCard {
+    width: 50%; /* Set the card width to 50% on larger screens */
+  }
+}
+
+/* Media query for screens 768px and narrower */
+@media screen and (max-width: 768px) {
+  .certCard {
+    width: 100%; /* Set the card width to 100% on smaller screens */
+  }
+}
+
 @keyframes progressOut {
   0% {
     width: 0%;
