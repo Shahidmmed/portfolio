@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { myData } from "../../../data/info";
+import aws from "../../../assets/aws1.png";
 import "./Skills.scss";
 
 const Skills: React.FC = () => {
@@ -60,58 +61,87 @@ const Skills: React.FC = () => {
                   applications for both commercial and consumer use.
                 </p>
               </div>
-              <div className="uk-text-center resume">
-                <p className="uk-margin-remove">
-                  To view my resume, click below
-                </p>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="resumeBtn uk-width-1-4"
-                  href={myData.personalInfo.resume}
-                >
-                  <span>
-                    <span>
-                      <span data-attr-span="View Resume">Resume</span>
-                    </span>
-                  </span>
-                </a>
+              <div>
+                <h5 className="skillHeader">Certifications</h5>
+                <div className="certCard uk-card uk-card-default uk-card-body">
+                  <div className="uk-flex uk-flex-center">
+                    <img
+                      src={aws}
+                      alt="AWS Certified Cloud Practitioner"
+                      className="certImg"
+                    />
+                  </div>
+                  <p className="uk-flex uk-flex-center">
+                    AWS Certified Cloud Practitioner validates cloud fluency and
+                    foundational AWS knowledge.
+                  </p>
+                  <p className="uk-flex uk-flex-center">
+                    <a
+                      href="https://www.credly.com/badges/721cef9c-d188-4a3f-86a0-6498f6bef055"
+                      className="verify"
+                    >
+                      Verify
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
             <div>
-              <div data-uk-scrollspy="cls: uk-animation-fade; delay: 500;">
-                <div className="chart uk-margin">
-                  <span>Front end</span>
-                  <footer>
-                    <div style={frontEnd} className="progress"></div>
-                  </footer>
+              <div>
+                <div data-uk-scrollspy="cls: uk-animation-fade; delay: 500;">
+                  <div className="chart uk-margin">
+                    <span>Front end</span>
+                    <footer>
+                      <div style={frontEnd} className="progress"></div>
+                    </footer>
+                  </div>
+                  <div className="chart uk-margin">
+                    <span>Back end</span>
+                    <footer>
+                      <div style={backEnd} className="progress"></div>
+                    </footer>
+                  </div>
+                  <div className="chart uk-margin">
+                    <span>React</span>
+                    <footer>
+                      <div style={react} className="progress"></div>
+                    </footer>
+                  </div>
                 </div>
-                <div className="chart uk-margin">
-                  <span>Back end</span>
-                  <footer>
-                    <div style={backEnd} className="progress"></div>
-                  </footer>
-                </div>
-                <div className="chart uk-margin">
-                  <span>React</span>
-                  <footer>
-                    <div style={react} className="progress"></div>
-                  </footer>
+                <div className="uk-text-center resume">
+                  <p className="uk-margin-remove">
+                    To view my resume, click below
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resumeBtn uk-width-1-4"
+                    href={myData.personalInfo.resume}
+                  >
+                    <span>
+                      <span>
+                        <span data-attr-span="View Resume">Resume</span>
+                      </span>
+                    </span>
+                  </a>
                 </div>
               </div>
-              <div
-                className="skillCard uk-card uk-card-default uk-card-body"
-                data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
-              >
-                <h5>Full Stack Developer</h5>
-                <p className="uk-margin-remove-bottom tag">ACS Ghana</p>
-                <p className="uk-margin-remove-top tag">2020-2023</p>
-                <p>
-                  A reliable supplier of technical and project management talent
-                  on an outsourcing basis to enable corporate customers to
-                  achieve their projects that involve software development and
-                  integration components.
-                </p>
+              <div className="uk-margin-top">
+                <h5 className="skillHeader uk-margin-top">Work Experience</h5>
+                <div
+                  className="skillCard uk-card uk-card-default uk-card-body"
+                  data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
+                >
+                  <h5>Full Stack Developer</h5>
+                  <p className="uk-margin-remove-bottom tag">ACS Ghana</p>
+                  <p className="uk-margin-remove-top tag">2020-2023</p>
+                  <p>
+                    A reliable supplier of technical and project management
+                    talent on an outsourcing basis to enable corporate customers
+                    to achieve their projects that involve software development
+                    and integration components.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

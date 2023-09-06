@@ -27,6 +27,7 @@ const About: React.FC = () => {
     "REST",
     "SQL",
     "ASP.NET",
+    "AWS",
     "npm",
     "UIkit",
     "Tailwind",
@@ -67,21 +68,26 @@ const About: React.FC = () => {
                   code.
                 </p>
                 <p>
-                  I studied computer engineering at University of Ghana and I'm
-                  currently working as a software engineer. I view my work as
-                  continual education, and I'm constantly looking for chances to
-                  collaborate with people who are as eager to offer their
-                  knowledge as I am to absorb it.
+                  I attended the University of Ghana, where I earned a degree in
+                  Computer Engineering. Presently, I am employed as a software
+                  engineer. I regard my profession as an ongoing learning
+                  journey, actively seeking opportunities to collaborate with
+                  individuals who share my enthusiasm for sharing and acquiring
+                  knowledge.
                 </p>
 
                 <p>
-                  My experience in web development extends from simple front-end
-                  applications that utilize REST apis to full stack web projects
-                  with a variety of tools and frameworks like PostgreSQL, HTML,
-                  CSS, React and ASP.NET. I'm incredibly passionate about UI
-                  effects, animations, and developing dynamic, intuitive user
-                  interfaces.
+                  My software engineering experience spans a wide spectrum,
+                  encompassing everything from front-end applications utilizing
+                  REST APIs to full-stack web projects using tools like
+                  PostgreSQL, HTML, CSS, React, and ASP.NET. My expertise also
+                  extends to crafting engaging UI effects, animations, and
+                  creating dynamic, intuitive user interfaces. In addition, an
+                  AWS Cloud Practitioner, I seamlessly integrate cloud services
+                  into my projects, ensuring scalability, security, and optimal
+                  performance.
                 </p>
+
                 <p>
                   I love discovering new and better ways to create seamless user
                   experiences with clean, efficient, and scalable code.My main
