@@ -107,7 +107,6 @@ export const otherProjects = [
     github: "https://github.com/Shahidmmed/chatapp",
     extlink: "https://chat-app-9fbb5.web.app/chat",
   },
-
   {
     title: "Weather App",
     summary:
