@@ -87,6 +87,13 @@ export const featuredProjects = [
 
 export const otherProjects = [
   {
+    title: "Data Structures in React",
+    summary: "An implementation of some data structures in a react application",
+    tools: ["HTML", "CSS", "React", "Redux", "Javascript"],
+    github: "https://github.com/Shahidmmed/react-data-structures",
+    extlink: "https://shahidmmed.github.io/react-data-structures/",
+  },
+  {
     title: "React Reusable components",
     summary:
       "Custom tailwind react reusable components such as, pagination, modal, tabs, otp, etc.",
@@ -100,6 +107,7 @@ export const otherProjects = [
     github: "https://github.com/Shahidmmed/chatapp",
     extlink: "https://chat-app-9fbb5.web.app/chat",
   },
+
   {
     title: "Weather App",
     summary:
