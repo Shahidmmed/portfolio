@@ -83,6 +83,15 @@ export const featuredProjects = [
     github: "https://github.com/Shahidmmed/amazon_clone",
     extlink: "https://clone-89d16.web.app/",
   },
+  {
+    title: "Sodoku generator and solver",
+    summary:
+      "An application that implements a backtracking algorithm for solving sodoku puzzles and generating new puzzles.",
+    tools: ["HTML", "CSS", "React", "Javascript"],
+    img: "sudoku.png",
+    github: "https://github.com/Shahidmmed/sodoku-solver",
+    extlink: "http://shahidmmed.github.io/sodoku-solver",
+  },
 ];
 
 export const otherProjects = [
