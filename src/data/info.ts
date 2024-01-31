@@ -34,6 +34,20 @@ export const myData: IConfig = {
 
 export const featuredProjects = [
   {
+    title: "Droff Admin",
+    summary: "Company admin portal for Droff delivery service",
+    tools: ["HTML", "CSS", "React", "Typescript"],
+    img: "drofflogistics.png",
+    extlink: "https://app-dev.drofflogistics.com/deliveries",
+  },
+  {
+    title: "Enabling The Disabled",
+    summary: "Company site for a charity organization",
+    tools: ["HTML", "CSS", "React", "Typescript"],
+    img: "enablingthedisabled.png",
+    extlink: "https://enablingthedisabled.org/",
+  },
+  {
     title: "Finance Logger",
     summary:
       "Web Application for logging, keeping track of and calculating expenses over selected periods.",
@@ -82,6 +96,15 @@ export const featuredProjects = [
     img: "amazonUi.png",
     github: "https://github.com/Shahidmmed/amazon_clone",
     extlink: "https://clone-89d16.web.app/",
+  },
+  {
+    title: "Sodoku generator and solver",
+    summary:
+      "An application that implements a backtracking algorithm for solving sodoku puzzles and generating new puzzles.",
+    tools: ["HTML", "CSS", "React", "Javascript"],
+    img: "sudoku.png",
+    github: "https://github.com/Shahidmmed/sodoku-solver",
+    extlink: "http://shahidmmed.github.io/sodoku-solver",
   },
 ];
 
