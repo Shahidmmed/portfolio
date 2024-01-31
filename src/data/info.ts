@@ -34,6 +34,20 @@ export const myData: IConfig = {
 
 export const featuredProjects = [
   {
+    title: "Droff Admin",
+    summary: "Company admin portal for Droff delivery service",
+    tools: ["HTML", "CSS", "React", "Typescript"],
+    img: "drofflogistics.png",
+    extlink: "https://app-dev.drofflogistics.com/deliveries",
+  },
+  {
+    title: "Enabling The Disabled",
+    summary: "Company site for a charity organization",
+    tools: ["HTML", "CSS", "React", "Typescript"],
+    img: "enablingthedisabled.png",
+    extlink: "https://enablingthedisabled.org/",
+  },
+  {
     title: "Finance Logger",
     summary:
       "Web Application for logging, keeping track of and calculating expenses over selected periods.",
