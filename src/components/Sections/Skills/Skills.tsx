@@ -136,10 +136,10 @@ const Skills: React.FC = () => {
                   <p className="uk-margin-remove-bottom tag">ACS Ghana</p>
                   <p className="uk-margin-remove-top tag">2020-2023</p>
                   <p>
-                    A reliable supplier of technical and project management
-                    talent on an outsourcing basis to enable corporate customers
-                    to achieve their projects that involve software development
-                    and integration components.
+                    A dependable source of technical and project management
+                    expertise, specializing in software engineering to help
+                    corporate clients efficiently execute software development
+                    and integration projects.
                   </p>
                 </div>
               </div>

@@ -34,11 +34,28 @@ export const myData: IConfig = {
 
 export const featuredProjects = [
   {
+    title: "Shop Hashim",
+    summary:
+      "E-commerce platform for a company selling merchandise, featuring integrated payment API.",
+    tools: ["HTML", "CSS", "Javascript", "Shopify", "Paystack"],
+    img: "hash.png",
+    extlink: "https://shophashim.com/",
+  },
+  {
     title: "Droff Admin",
-    summary: "Company admin portal for Droff delivery service",
+    summary:
+      "Admin portal for Droff delivery service to oversee and manage deliveries.",
     tools: ["HTML", "CSS", "React", "Typescript"],
     img: "drofflogistics.png",
     extlink: "https://app-dev.drofflogistics.com/deliveries",
+  },
+  {
+    title: "NABS Jobs and Trips",
+    summary:
+      "Web application for Nabs agency clients to book trips and submit job applications.",
+    tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#", "Typescript"],
+    img: "nabs.png",
+    extlink: "https://jobs.nabsgroupgh.com/",
   },
   {
     title: "Enabling The Disabled",
@@ -48,14 +65,6 @@ export const featuredProjects = [
     extlink: "https://enablingthedisabled.org/",
   },
   {
-    title: "Finance Logger",
-    summary:
-      "Web Application for logging, keeping track of and calculating expenses over selected periods.",
-    tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#", "Typescript"],
-    img: "financeLogger.png",
-    github: "https://github.com/Shahidmmed/MyFinanceLogger",
-  },
-  {
     title: "Admin Dashboard",
     summary:
       "React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and Editor",
@@ -63,6 +72,15 @@ export const featuredProjects = [
     img: "adminDashboard.png",
     github: "https://github.com/Shahidmmed/dashboard_app",
     extlink: "https://dashboard-app-7672b.web.app/",
+  },
+  {
+    title: "Sodoku generator and solver",
+    summary:
+      "An application that implements a backtracking algorithm for solving sodoku puzzles and generating new puzzles.",
+    tools: ["HTML", "CSS", "React", "Javascript"],
+    img: "sudoku.png",
+    github: "https://github.com/Shahidmmed/sodoku-solver",
+    extlink: "http://shahidmmed.github.io/sodoku-solver",
   },
   {
     title: "Netflix clone",
@@ -96,15 +114,6 @@ export const featuredProjects = [
     img: "amazonUi.png",
     github: "https://github.com/Shahidmmed/amazon_clone",
     extlink: "https://clone-89d16.web.app/",
-  },
-  {
-    title: "Sodoku generator and solver",
-    summary:
-      "An application that implements a backtracking algorithm for solving sodoku puzzles and generating new puzzles.",
-    tools: ["HTML", "CSS", "React", "Javascript"],
-    img: "sudoku.png",
-    github: "https://github.com/Shahidmmed/sodoku-solver",
-    extlink: "http://shahidmmed.github.io/sodoku-solver",
   },
 ];
 
