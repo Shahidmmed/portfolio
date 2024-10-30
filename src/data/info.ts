@@ -33,6 +33,29 @@ export const myData: IConfig = {
 
 export const featuredProjects = [
   {
+    title: "NABS Jobs and Trips",
+    summary:
+      "Web application for Nabs agency clients to book trips and submit job applications.",
+    tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#", "Typescript"],
+    img: "nabs.png",
+    extlink: "https://jobs.nabsgroupgh.com/",
+  },
+  {
+    title: "Adaptive HRIS",
+    summary:
+      "Adaptive HRIS is a locally made HR and Payroll system built to world class standards of quality and technology.",
+    tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#"],
+    img: "adaptivehris.png",
+    extlink: "https://www.adaptivehris.com/",
+  },
+  {
+    title: "Enabling The Disabled",
+    summary: "Company site for a charity organization",
+    tools: ["HTML", "CSS", "React", "Typescript"],
+    img: "enablingthedisabled.png",
+    extlink: "https://enablingthedisabled.org/",
+  },
+  {
     title: "Shop Hashim",
     summary:
       "E-commerce platform for a company selling merchandise, featuring integrated payment API.",
@@ -46,22 +69,7 @@ export const featuredProjects = [
       "Admin portal for Droff delivery service to oversee and manage deliveries.",
     tools: ["HTML", "CSS", "React", "Typescript"],
     img: "drofflogistics.png",
-    extlink: "https://app-dev.drofflogistics.com/deliveries",
-  },
-  {
-    title: "NABS Jobs and Trips",
-    summary:
-      "Web application for Nabs agency clients to book trips and submit job applications.",
-    tools: ["HTML", "CSS", "PostgreSQL", "ASP.NET", "C#", "Typescript"],
-    img: "nabs.png",
-    extlink: "https://jobs.nabsgroupgh.com/",
-  },
-  {
-    title: "Enabling The Disabled",
-    summary: "Company site for a charity organization",
-    tools: ["HTML", "CSS", "React", "Typescript"],
-    img: "enablingthedisabled.png",
-    extlink: "https://enablingthedisabled.org/",
+    /* extlink: "https://app-dev.drofflogistics.com/deliveries", */
   },
   {
     title: "Admin Dashboard",
