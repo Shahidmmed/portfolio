@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
   };
   const react = {
     backgroundColor: "rgb(210, 108, 213)",
-    width: "75%",
+    width: "90%",
   };
   return (
     <>

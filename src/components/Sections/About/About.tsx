@@ -64,7 +64,7 @@ const About: React.FC = () => {
               className="about-me"
               data-uk-scrollspy="cls: uk-animation-slide-left; delay: 900;"
             >
-              <div>
+              <div className="uk-margin-bottom">
                 <p className="leader">
                   Hi! I'm Shahid. I'm a software engineer with a keen eye for
                   design and a passion for fusing great design with beautiful
@@ -91,7 +91,7 @@ const About: React.FC = () => {
                   performance.
                 </p>
 
-                <p>
+                <p className="res-margin">
                   I love discovering new and better ways to create seamless user
                   experiences with clean, efficient, and scalable code.My main
                   objective is to create something beautiful with people who
