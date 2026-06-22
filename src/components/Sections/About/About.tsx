@@ -2,47 +2,48 @@ import "./About.scss";
 import TagCloud from "TagCloud";
 import { useEffect } from "react";
 
+const tools = [
+  "Typescript",
+  "Javascript",
+  "SASS",
+  "CSS",
+  "C#",
+  "HTML",
+  "ReactJS",
+  "jQuery",
+  "Redux",
+  "HTML",
+  "REST",
+  "SQL",
+  "S3",
+  "ASP.NET",
+  "AWS",
+  "npm",
+  "UIkit",
+  "Tailwind",
+  "EC2",
+  "Bootstrap",
+  "Wordpress",
+  "Firebase",
+  "React Native",
+  "Context API",
+  "Git",
+];
+
+const options = {
+  radius: 280,
+};
+
 const About: React.FC = () => {
   useEffect(() => {
-    var cloudContainer = document.querySelector<HTMLElement>(".tagCloud");
-    var cloud = document.querySelectorAll(".tagcloud");
-    if (cloud.length === 1) {
-      return;
-    } else if (!cloudContainer.classList.contains("tagcloud")) {
-      TagCloud(".tagCloud", tools, options);
-    }
-  });
+    const cloudContainer = document.querySelector<HTMLElement>(".tagCloud");
 
-  const tools = [
-    "Typescript",
-    "Javscript",
-    "SASS",
-    "CSS",
-    "C#",
-    "HTML",
-    "ReactJS",
-    "jQuery",
-    "Redux",
-    "HTML",
-    "REST",
-    "SQL",
-    "S3",
-    "ASP.NET",
-    "AWS",
-    "npm",
-    "UIkit",
-    "Tailwind",
-    "EC2",
-    "Bootstrap",
-    "Wordpress",
-    "Firebase",
-    "React Native",
-    "Context API",
-    "Git",
-  ];
-  const options = {
-    radius: 280,
-  };
+    if (!cloudContainer || cloudContainer.classList.contains("tagcloud")) {
+      return;
+    }
+
+    TagCloud(".tagCloud", tools, options);
+  }, []);
 
   return (
     <>
@@ -93,7 +94,7 @@ const About: React.FC = () => {
 
                 <p className="res-margin">
                   I love discovering new and better ways to create seamless user
-                  experiences with clean, efficient, and scalable code.My main
+                  experiences with clean, efficient, and scalable code. My main
                   objective is to create something beautiful with people who
                   bring out the best in me, at the end of the day.
                 </p>

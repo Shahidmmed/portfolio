@@ -9,24 +9,30 @@ const Navbar: React.FC = () => {
   const [logo, setLogo] = useState(logoDark);
 
   useEffect(() => {
-    window.dispatchEvent(new Event("storage"));
-    window.addEventListener(
-      "storage",
-      () => {
-        console.log("storage event occured here");
-        if (localStorage.getItem("page.theme") === "light") {
-          setLogo(logoLight);
-        } else if (localStorage.getItem("page.theme") === "dark") {
-          setLogo(logoDark);
-        }
-      },
-      false
-    );
+    const syncLogoWithTheme = () => {
+      if (localStorage.getItem("page.theme") === "light") {
+        setLogo(logoLight);
+      } else {
+        setLogo(logoDark);
+      }
+    };
+
+    syncLogoWithTheme();
+    window.addEventListener("storage", syncLogoWithTheme);
+
+    return () => {
+      window.removeEventListener("storage", syncLogoWithTheme);
+    };
   }, []);
 
   const showNav = () => {
-    const primaryNav = document.querySelector(".primary-nav");
-    const navToggle = document.querySelector(".toggle-mobile-nav");
+    const primaryNav = document.querySelector<HTMLElement>(".primary-nav");
+    const navToggle = document.querySelector<HTMLElement>(".toggle-mobile-nav");
+
+    if (!primaryNav || !navToggle) {
+      return;
+    }
+
     const visibility = primaryNav.getAttribute("data-visible");
 
     if (!navToggled) {
@@ -43,10 +49,6 @@ const Navbar: React.FC = () => {
       primaryNav.setAttribute("data-visible", "false");
       navToggle.setAttribute("aria-expanded", "false");
     }
-
-    primaryNav.addEventListener("focusout", () => {
-      console.log("click");
-    });
   };
 
   return (

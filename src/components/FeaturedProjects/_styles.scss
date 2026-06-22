@@ -3,6 +3,21 @@
   grid-auto-flow: row;
   gap: 5rem;
 }
+
+.projectItem.noImage {
+  gap: 1rem;
+
+  .textContainer {
+    position: relative;
+    left: auto;
+    right: auto;
+    max-width: 100%;
+    height: fit-content;
+    background-color: var(--darker-background);
+    border-radius: 10px;
+  }
+}
+
 .imgContainer {
   position: relative;
   width: 65%;
