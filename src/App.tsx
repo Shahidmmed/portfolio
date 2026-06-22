@@ -8,10 +8,10 @@ function App() {
   return (
     <BrowserRouter>
       <Helmet>
-        <title>Abdul Shahid | Sofware Engineer</title>
+        <title>Abdul Shahid | Software Engineer</title>
         <meta
           name="description"
-          content="Abdul Shahid is a Sofware Engineer who builds effective responsive websites that are fast, simple to use, and constructed according to best engineering practices."
+          content="Abdul Shahid is a Software Engineer who builds effective responsive websites that are fast, simple to use, and constructed according to best engineering practices."
         />
         <meta name="keyword" content="portfolio, software engineer" />
       </Helmet>

@@ -33,6 +33,21 @@ export const myData: IConfig = {
 
 export const featuredProjects = [
   {
+    title: "Boafuo",
+    summary:
+      "The system that manages a tailor's workflow inside WhatsApp. Orders, measurements, deadlines, and updates are all sorted without any extra app.",
+    tools: [
+      "WhatsApp",
+      "Typescript",
+      "AI",
+      "Automation",
+      "Order Management",
+      "PostgreSQL",
+    ],
+    img: "boafuo.jpg",
+    extlink: "https://www.boafuo.com/",
+  },
+  {
     title: "NABS Jobs and Trips",
     summary:
       "Web application for Nabs agency clients to book trips and submit job applications.",
@@ -49,13 +64,6 @@ export const featuredProjects = [
     extlink: "https://www.adaptivehris.com/",
   },
   {
-    title: "Enabling The Disabled",
-    summary: "Company site for a charity organization",
-    tools: ["HTML", "CSS", "React", "Typescript"],
-    img: "enablingthedisabled.png",
-    extlink: "https://enablingthedisabled.org/",
-  },
-  {
     title: "Shop Hashim",
     summary:
       "E-commerce platform for a company selling merchandise, featuring integrated payment API.",
@@ -64,12 +72,43 @@ export const featuredProjects = [
     extlink: "https://shophashim.com/",
   },
   {
+    title: "Juvenile Justice",
+    summary:
+      "Web platform for a juvenile justice initiative, focused on accessible information and program visibility.",
+    tools: ["HTML", "CSS", "React", "Typescript", "Firebase"],
+    img: "juvenile-justice.png",
+    extlink: "https://juvenile-justice-ec46f.web.app/",
+  },
+  {
+    title: "Black Star",
+    summary:
+      "Responsive web application built to present brand content with a clean, production-ready user experience.",
+    tools: ["HTML", "CSS", "React", "Typescript", "Firebase"],
+    img: "blackstar.png",
+    extlink: "https://blackstar-8baf3.web.app/",
+  },
+  {
+    title: "Grey Area Studios",
+    summary:
+      "Studio website showcasing creative work, services, and brand identity for a Ghana-based creative agency.",
+    tools: ["HTML", "CSS", "React", "Typescript"],
+    img: "greyareastudiosgh.png",
+    extlink: "https://www.greyareastudiosgh.com/",
+  },
+  {
     title: "Droff Admin",
     summary:
       "Admin portal for Droff delivery service to oversee and manage deliveries.",
     tools: ["HTML", "CSS", "React", "Typescript"],
     img: "drofflogistics.png",
     /* extlink: "https://app-dev.drofflogistics.com/deliveries", */
+  },
+  {
+    title: "Enabling The Disabled",
+    summary: "Company site for a charity organization",
+    tools: ["HTML", "CSS", "React", "Typescript"],
+    img: "enablingthedisabled.png",
+    extlink: "https://enablingthedisabled.org/",
   },
   {
     title: "Admin Dashboard",
@@ -88,39 +127,6 @@ export const featuredProjects = [
     img: "sudoku.png",
     github: "https://github.com/Shahidmmed/sodoku-solver",
     extlink: "http://shahidmmed.github.io/sodoku-solver",
-  },
-  {
-    title: "Netflix clone",
-    summary: "Netflix clone with trailer preview web application.",
-    tools: [
-      "HTML",
-      "CSS",
-      "React",
-      "Javascript",
-      "REST",
-      "Tailwind",
-      "Firebase",
-    ],
-    img: "netflixUi.png",
-    github: "https://github.com/Shahidmmed/netflix_ui",
-    extlink: "https://netflix-clone-63557.web.app/",
-  },
-  {
-    title: "Amazon clone",
-    summary:
-      "Amazon clone with user authentication, cart, checkout and payment processing functionalities.",
-    tools: [
-      "HTML",
-      "CSS",
-      "React",
-      "Javascript",
-      "REST",
-      "Tailwind",
-      "Firebase",
-    ],
-    img: "amazonUi.png",
-    github: "https://github.com/Shahidmmed/amazon_clone",
-    extlink: "https://clone-89d16.web.app/",
   },
 ];
 
@@ -158,5 +164,36 @@ export const otherProjects = [
     summary: "Web Application for generating and displaying random users",
     tools: ["HTML", "CSS", "React", "Node", "REST", "Javascript"],
     github: "https://github.com/Shahidmmed/randomuser",
+  },
+  {
+    title: "Netflix clone",
+    summary: "Netflix clone with trailer preview web application.",
+    tools: [
+      "HTML",
+      "CSS",
+      "React",
+      "Javascript",
+      "REST",
+      "Tailwind",
+      "Firebase",
+    ],
+    github: "https://github.com/Shahidmmed/netflix_ui",
+    extlink: "https://netflix-clone-63557.web.app/",
+  },
+  {
+    title: "Amazon clone",
+    summary:
+      "Amazon clone with user authentication, cart, checkout and payment processing functionalities.",
+    tools: [
+      "HTML",
+      "CSS",
+      "React",
+      "Javascript",
+      "REST",
+      "Tailwind",
+      "Firebase",
+    ],
+    github: "https://github.com/Shahidmmed/amazon_clone",
+    extlink: "https://clone-89d16.web.app/",
   },
 ];

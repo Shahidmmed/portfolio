@@ -17,6 +17,10 @@
     font-family: gulzar;
     color: var(--textShade300);
   }
+  .certifications {
+    display: grid;
+    gap: 1rem;
+  }
   .skillCard {
     background-color: var(--darker-background);
     border-radius: 10px;

@@ -12,9 +12,10 @@ const FeaturedProjects: React.FC<Props> = (prop) => {
   let txtPos = prop.invert ? "textRight" : "textLeft";
   let txtAlign = prop.invert ? "textAlign" : "";
   let imgPos = prop.invert ? "" : "imgPosition";
+  const hasImage = Boolean(prop.data.img);
 
   return (
-    <div className={`${prop.className} projectItem`}>
+    <div className={`${prop.className} projectItem ${hasImage ? "" : "noImage"}`}>
       <div className={`${txtPos} ${txtAlign} textContainer uk-padding`}>
         <h3 className="title">{prop.data.title}</h3>
         <div className="summary uk-card uk-card-small uk-card-body">
@@ -48,12 +49,14 @@ const FeaturedProjects: React.FC<Props> = (prop) => {
           ) : null}
         </div>
       </div>
-      <div className={`${imgPos} imgContainer`}>
-        <img
-          src={require(`../../assets/projectImages/${prop.data.img}`)}
-          alt=""
-        />
-      </div>
+      {hasImage ? (
+        <div className={`${imgPos} imgContainer`}>
+          <img
+            src={require(`../../assets/projectImages/${prop.data.img}`)}
+            alt=""
+          />
+        </div>
+      ) : null}
     </div>
   );
 };
