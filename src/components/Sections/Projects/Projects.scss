@@ -3,6 +3,7 @@
   display: grid;
   grid-auto-flow: row;
   gap: 5rem;
+  padding-left: 0;
 }
 .folder {
   background-color: var(--darker-background) !important;
@@ -23,9 +24,34 @@
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 768px) {
+  .featuredProjectsWrap {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: calc(100vw - 2rem);
+    margin-left: calc(50% - 50vw + 1rem);
+  }
+
+  .projects-list {
+    gap: 3rem;
+  }
+
   .list-item {
-    min-width: 320px;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .featuredProjectsWrap {
+    width: calc(100vw - 1.25rem);
+    margin-left: calc(50% - 50vw + 0.625rem);
+  }
+
+  .projects-list {
+    gap: 2.5rem;
   }
 }
 
