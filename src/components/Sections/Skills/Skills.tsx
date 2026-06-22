@@ -171,8 +171,11 @@ const Skills: React.FC = () => {
                   <p className="uk-margin-remove-bottom tag">Haxo Labs</p>
                   <p className="uk-margin-remove-top tag">2025-2026</p>
                   <p>
-                    Building responsive web applications and production-ready
-                    digital experiences for client and internal product work.
+                    Designing and building technologies that extend what
+                    software can do. My work spanned independent research,
+                    software engineering, and strategic collaborations, creating
+                    the infrastructure behind intelligent, reliable, and
+                    scalable systems.
                   </p>
                 </div>
               </div>
