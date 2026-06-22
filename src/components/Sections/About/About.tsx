@@ -1,6 +1,6 @@
 import "./About.scss";
 import TagCloud from "TagCloud";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const tools = [
   "Typescript",
@@ -35,14 +35,21 @@ const options = {
 };
 
 const About: React.FC = () => {
-  useEffect(() => {
-    const cloudContainer = document.querySelector<HTMLElement>(".tagCloud");
+  const tagCloudRef = useRef<HTMLDivElement>(null);
 
-    if (!cloudContainer || cloudContainer.classList.contains("tagcloud")) {
+  useEffect(() => {
+    const cloudContainer = tagCloudRef.current;
+
+    if (!cloudContainer) {
       return;
     }
 
+    cloudContainer.innerHTML = "";
     TagCloud(".tagCloud", tools, options);
+
+    return () => {
+      cloudContainer.innerHTML = "";
+    };
   }, []);
 
   return (
@@ -104,7 +111,7 @@ const About: React.FC = () => {
               className=""
               data-uk-scrollspy="cls: uk-animation-slide-right; delay: 900;"
             >
-              <div className="tagCloud"></div>
+              <div ref={tagCloudRef} className="tagCloud"></div>
             </div>
           </div>
         </div>
