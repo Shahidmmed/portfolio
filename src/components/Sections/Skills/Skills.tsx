@@ -55,7 +55,7 @@ const Skills: React.FC = () => {
             <div data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500;">
               <div>
                 <p>
-                  I'm an experienced full-stack developer that, out of personal
+                  I'm an experienced full-stack Engineer that, out of personal
                   inclination, prefers to focus on front-end development.
                 </p>
                 <p>
@@ -153,7 +153,7 @@ const Skills: React.FC = () => {
                   className="skillCard uk-card uk-card-default uk-card-body"
                   data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
                 >
-                  <h5>Full Stack Developer</h5>
+                  <h5>Full Stack Engineer</h5>
                   <p className="uk-margin-remove-bottom tag">ACS Ghana</p>
                   <p className="uk-margin-remove-top tag">2020-2026</p>
                   <p>
@@ -167,7 +167,7 @@ const Skills: React.FC = () => {
                   className="skillCard uk-card uk-card-default uk-card-body uk-margin-top"
                   data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
                 >
-                  <h5>Full Stack Developer</h5>
+                  <h5>Full Stack Engineer</h5>
                   <p className="uk-margin-remove-bottom tag">Haxo Labs</p>
                   <p className="uk-margin-remove-top tag">2025-2026</p>
                   <p>
