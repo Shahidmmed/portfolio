@@ -51,9 +51,12 @@ const Skills: React.FC = () => {
             Skills & Experience <span className="heading-line"></span>
           </h3>
 
-          <div className="uk-grid-match uk-child-width-1-2@m" data-uk-grid>
+          <div
+            className="skillsGrid uk-grid-match uk-child-width-1-2@m"
+            data-uk-grid
+          >
             <div data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500;">
-              <div>
+              <div className="skillsIntro">
                 <p>
                   I'm an experienced full-stack Engineer that, out of personal
                   inclination, prefers to focus on front-end development.
@@ -107,9 +110,12 @@ const Skills: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <div>
-                <div data-uk-scrollspy="cls: uk-animation-fade; delay: 500;">
+            <div className="skillsAside">
+              <div className="skillsAsideContent">
+                <div
+                  className="progressGroup"
+                  data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
+                >
                   <div className="chart uk-margin">
                     <span>Front end</span>
                     <footer>
@@ -147,36 +153,50 @@ const Skills: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <div className="uk-margin-top">
+              <div className="workExperience uk-margin-top">
                 <h5 className="skillHeader uk-margin-top">Work Experience</h5>
-                <div
-                  className="skillCard uk-card uk-card-default uk-card-body"
-                  data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
-                >
-                  <h5>Full Stack Engineer</h5>
-                  <p className="uk-margin-remove-bottom tag">ACS Ghana</p>
-                  <p className="uk-margin-remove-top tag">2020-2026</p>
-                  <p>
-                    A dependable source of technical and project management
-                    expertise, specializing in software engineering to help
-                    corporate clients efficiently execute software development
-                    and integration projects.
-                  </p>
-                </div>
-                <div
-                  className="skillCard uk-card uk-card-default uk-card-body uk-margin-top"
-                  data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
-                >
-                  <h5>Full Stack Engineer</h5>
-                  <p className="uk-margin-remove-bottom tag">Haxo Labs</p>
-                  <p className="uk-margin-remove-top tag">2025-2026</p>
-                  <p>
-                    Designing and building technologies that extend what
-                    software can do. My work spanned independent research,
-                    software engineering, and strategic collaborations, creating
-                    the infrastructure behind intelligent, reliable, and
-                    scalable systems.
-                  </p>
+                <div className="experienceList">
+                  <div
+                    className="skillCard experienceCard uk-card uk-card-default uk-card-body"
+                    data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
+                  >
+                    <div className="experienceHeader">
+                      <div>
+                        <h5>Full Stack Engineer</h5>
+                        <p className="uk-margin-remove-bottom tag">
+                          ACS Ghana
+                        </p>
+                      </div>
+                      <p className="experienceDate tag">2020-2026</p>
+                    </div>
+                    <p>
+                      A dependable source of technical and project management
+                      expertise, specializing in software engineering to help
+                      corporate clients efficiently execute software development
+                      and integration projects.
+                    </p>
+                  </div>
+                  <div
+                    className="skillCard experienceCard uk-card uk-card-default uk-card-body"
+                    data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
+                  >
+                    <div className="experienceHeader">
+                      <div>
+                        <h5>Full Stack Engineer</h5>
+                        <p className="uk-margin-remove-bottom tag">
+                          Haxo Labs
+                        </p>
+                      </div>
+                      <p className="experienceDate tag">2025-2026</p>
+                    </div>
+                    <p>
+                      Designing and building technologies that extend what
+                      software can do. My work spanned independent research,
+                      software engineering, and strategic collaborations,
+                      creating the infrastructure behind intelligent, reliable,
+                      and scalable systems.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

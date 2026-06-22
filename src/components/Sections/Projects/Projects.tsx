@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
             Some of My Work <span className="heading-line"></span>
           </h3>
 
-          <div className="uk-padding">
+          <div className="featuredProjectsWrap uk-padding">
             <ul
               className="projects-list"
               data-uk-scrollspy="target: .projectItem;"
