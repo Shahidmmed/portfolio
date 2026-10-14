@@ -9,10 +9,16 @@ type IConfig = {
   };
 };
 
+export type IProjectStat = {
+  value: string;
+  label: string;
+};
+
 export type IProjects = {
   title: string;
   summary: string;
   tools: string[];
+  highlights?: IProjectStat[];
   img?: string;
   github?: string;
   extlink?: string;
@@ -32,6 +38,18 @@ export const myData: IConfig = {
 };
 
 export const featuredProjects = [
+  {
+    title: "Accra Living",
+    summary:
+      "A browser life simulation game set in Accra. Players take city jobs, rent homes, and spend time with real people. Close to 11,000 played in the last week.",
+    tools: ["3D", "Multiplayer", "Browser"],
+    highlights: [
+      { value: "10,226", label: "players in 7 days" },
+      { value: "831", label: "active in 24 hours" },
+    ],
+    img: "accra-living.png",
+    extlink: "https://accra-living.com/",
+  },
   {
     title: "Boafuo",
     summary:

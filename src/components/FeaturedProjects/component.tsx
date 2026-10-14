@@ -13,11 +13,26 @@ const FeaturedProjects: React.FC<Props> = (prop) => {
   let txtAlign = prop.invert ? "textAlign" : "";
   let imgPos = prop.invert ? "" : "imgPosition";
   const hasImage = Boolean(prop.data.img);
+  const highlights = prop.data.highlights ?? [];
 
   return (
-    <div className={`${prop.className} projectItem ${hasImage ? "" : "noImage"}`}>
+    <div
+      className={`${prop.className} projectItem ${hasImage ? "" : "noImage"} ${
+        highlights.length ? "hasStats" : ""
+      }`}
+    >
       <div className={`${txtPos} ${txtAlign} textContainer uk-padding`}>
         <h3 className="title">{prop.data.title}</h3>
+        {highlights.length ? (
+          <ul className="stats">
+            {highlights.map((stat) => (
+              <li className="stat" key={stat.label}>
+                <span className="statValue">{stat.value}</span>
+                <span className="statLabel">{stat.label}</span>
+              </li>
+            ))}
+          </ul>
+        ) : null}
         <div className="summary uk-card uk-card-small uk-card-body">
           <p>{prop.data.summary}</p>
         </div>
