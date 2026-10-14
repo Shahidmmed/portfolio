@@ -21,8 +21,8 @@ const Contact: React.FC = () => {
           </h3>
           <div className="uk-padding contact">
             <p className="uk-text-center">
-              I'm open collaborate on projects and very interested in attractive
-              freelance and long term employment opportunites. We can simply
+              I'm open to collaborating on projects and very interested in attractive
+              freelance and long term employment opportunities. We can simply
               have a chat if you wish to discuss anything though.
             </p>
             <a className="hello" href={`mailto:${myData.personalInfo.mail}`}>

@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import "./ThemeToggler.scss";
 
+type Theme = "dark" | "light";
+
 const ThemeToggler: React.FC = () => {
   useEffect(() => {
     // load theme on screen load
@@ -8,24 +10,34 @@ const ThemeToggler: React.FC = () => {
   }, []);
 
   // get current theme from system or localStorage
-  function getCurrentTheme() {
-    let theme = window.matchMedia("(prefers-color-scheme:dark)").matches
+  function getCurrentTheme(): Theme {
+    let theme: Theme = window.matchMedia("(prefers-color-scheme:dark)").matches
       ? "dark"
       : "light";
-    if (localStorage.getItem("page.theme")) {
-      theme = localStorage.getItem("page.theme");
+    const savedTheme = localStorage.getItem("page.theme");
+
+    if (savedTheme === "dark" || savedTheme === "light") {
+      theme = savedTheme;
     }
+
     return theme;
   }
 
   // apply current theme by changing page-theme attribute
-  function loadTheme(theme) {
-    let root = document.querySelector("body");
-    let themeIcon = document.querySelector(".toggler-icon");
+  function loadTheme(theme: Theme) {
+    const root = document.querySelector("body");
+    const themeIcon = document.querySelector(".toggler-icon");
+
+    if (!root) {
+      return;
+    }
+
     root.setAttribute("page-theme", `${theme}`);
+
     if (!themeIcon) {
       return;
     }
+
     if (theme === "light") {
       themeIcon.innerHTML = `<svg stroke="var(--accentColor)" fill="var(--accentColor)" stroke-width="0" viewBox="0 0 512 512" aria-hidden="true" focusable="false" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg>`;
     } else {
@@ -41,6 +53,7 @@ const ThemeToggler: React.FC = () => {
     }
     window.localStorage.setItem("page.theme", `${theme}`);
     loadTheme(theme);
+    window.dispatchEvent(new Event("storage"));
   }
 
   return (

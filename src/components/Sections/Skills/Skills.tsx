@@ -4,22 +4,29 @@ import aws from "../../../assets/aws1.png";
 import "./Skills.scss";
 
 const Skills: React.FC = () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const bar = entry.target.querySelector(".progress");
-
-      if (entry.isIntersecting) {
-        bar.classList.add("animate");
-        return;
-      }
-    });
-  });
-
   useEffect(() => {
-    document.querySelectorAll(".chart").forEach((footer) => {
-      observer.observe(footer);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const bar = entry.target.querySelector<HTMLElement>(".progress");
+
+        if (entry.isIntersecting && bar) {
+          bar.classList.add("animate");
+        }
+      });
     });
-  });
+    const charts = document.querySelectorAll(".chart");
+
+    charts.forEach((chart) => {
+      observer.observe(chart);
+    });
+
+    return () => {
+      charts.forEach((chart) => {
+        observer.unobserve(chart);
+      });
+      observer.disconnect();
+    };
+  }, []);
 
   const frontEnd = {
     backgroundColor: "var(--accentColor)",
@@ -31,7 +38,7 @@ const Skills: React.FC = () => {
   };
   const react = {
     backgroundColor: "rgb(210, 108, 213)",
-    width: "75%",
+    width: "90%",
   };
   return (
     <>
@@ -44,11 +51,14 @@ const Skills: React.FC = () => {
             Skills & Experience <span className="heading-line"></span>
           </h3>
 
-          <div className="uk-grid-match uk-child-width-1-2@m" data-uk-grid>
+          <div
+            className="skillsGrid uk-grid-match uk-child-width-1-2@m"
+            data-uk-grid
+          >
             <div data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500;">
-              <div>
+              <div className="skillsIntro">
                 <p>
-                  I'm an experienced full-stack developer that, out of personal
+                  I'm an experienced full-stack Engineer that, out of personal
                   inclination, prefers to focus on front-end development.
                 </p>
                 <p>
@@ -61,7 +71,7 @@ const Skills: React.FC = () => {
                   applications for both commercial and consumer use.
                 </p>
               </div>
-              <div>
+              <div className="certifications">
                 <h5 className="skillHeader">Certifications</h5>
                 <div className="certCard uk-card uk-card-default uk-card-body">
                   <div className="uk-flex uk-flex-center">
@@ -84,11 +94,28 @@ const Skills: React.FC = () => {
                     </a>
                   </p>
                 </div>
+                <div className="certCard uk-card uk-card-default uk-card-body">
+                  <div className="uk-flex uk-flex-center">
+                    <img
+                      src={aws}
+                      alt="AWS Certified Solutions Architect - Associate"
+                      className="certImg"
+                    />
+                  </div>
+                  <p className="uk-flex uk-flex-center">
+                    AWS Certified Solutions Architect - Associate validates
+                    expertise in designing secure, resilient, and cost-optimized
+                    cloud architectures on AWS.
+                  </p>
+                </div>
               </div>
             </div>
-            <div>
-              <div>
-                <div data-uk-scrollspy="cls: uk-animation-fade; delay: 500;">
+            <div className="skillsAside">
+              <div className="skillsAsideContent">
+                <div
+                  className="progressGroup"
+                  data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
+                >
                   <div className="chart uk-margin">
                     <span>Front end</span>
                     <footer>
@@ -126,21 +153,50 @@ const Skills: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <div className="uk-margin-top">
+              <div className="workExperience uk-margin-top">
                 <h5 className="skillHeader uk-margin-top">Work Experience</h5>
-                <div
-                  className="skillCard uk-card uk-card-default uk-card-body"
-                  data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
-                >
-                  <h5>Full Stack Developer</h5>
-                  <p className="uk-margin-remove-bottom tag">ACS Ghana</p>
-                  <p className="uk-margin-remove-top tag">2020-2023</p>
-                  <p>
-                    A dependable source of technical and project management
-                    expertise, specializing in software engineering to help
-                    corporate clients efficiently execute software development
-                    and integration projects.
-                  </p>
+                <div className="experienceList">
+                  <div
+                    className="skillCard experienceCard uk-card uk-card-default uk-card-body"
+                    data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
+                  >
+                    <div className="experienceHeader">
+                      <div>
+                        <h5>Full Stack Engineer</h5>
+                        <p className="uk-margin-remove-bottom tag">
+                          ACS Ghana
+                        </p>
+                      </div>
+                      <p className="experienceDate tag">2020-2026</p>
+                    </div>
+                    <p>
+                      A dependable source of technical and project management
+                      expertise, specializing in software engineering to help
+                      corporate clients efficiently execute software development
+                      and integration projects.
+                    </p>
+                  </div>
+                  <div
+                    className="skillCard experienceCard uk-card uk-card-default uk-card-body"
+                    data-uk-scrollspy="cls: uk-animation-fade; delay: 500;"
+                  >
+                    <div className="experienceHeader">
+                      <div>
+                        <h5>Full Stack Engineer</h5>
+                        <p className="uk-margin-remove-bottom tag">
+                          Haxo Labs
+                        </p>
+                      </div>
+                      <p className="experienceDate tag">2025-2026</p>
+                    </div>
+                    <p>
+                      Designing and building technologies that extend what
+                      software can do. My work spanned independent research,
+                      software engineering, and strategic collaborations,
+                      creating the infrastructure behind intelligent, reliable,
+                      and scalable systems.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

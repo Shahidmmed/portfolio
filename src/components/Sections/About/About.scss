@@ -14,3 +14,13 @@
     bottom: 10%;
   }
 }
+
+.res-margin {
+  margin-top: 45px;
+}
+
+@media (max-width: 530px) {
+  .res-margin {
+    margin-top: 120px;
+  }
+}
